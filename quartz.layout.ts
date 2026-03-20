@@ -15,8 +15,7 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/your-username",
-      // 원하는 링크 추가
+      GitHub: "https://github.com/omija-tea",
     },
   }),
 }
