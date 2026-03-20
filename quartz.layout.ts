@@ -1,21 +1,68 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
-// components shared across all pages
+/**
+ * omija-tea blog — 레이아웃 설정
+ * 
+ * "최근 작성한 글" 탭이 오른쪽 사이드바에 표시됩니다.
+ * 이 파일을 /data/quartz-blog/quartz.layout.ts 에 덮어씁니다.
+ */
+
+// 모든 페이지에 공통으로 적용되는 컴포넌트
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      GitHub: "https://github.com/your-username",
+      // 원하는 링크 추가
     },
   }),
 }
 
-// components for pages that display a single page (e.g. a single note)
+// 일반 콘텐츠 페이지 레이아웃 (블로그 글)
 export const defaultContentPageLayout: PageLayout = {
+  beforeBody: [
+    Component.Breadcrumbs(),
+    Component.ArticleTitle(),
+    Component.ContentMeta(),
+    Component.TagList(),
+  ],
+  left: [
+    Component.PageTitle(),
+    Component.MobileOnly(Component.Spacer()),
+    Component.Search(),
+    Component.Darkmode(),
+    Component.DesktopOnly(
+      Component.Explorer({
+        title: "탐색",
+      }),
+    ),
+  ],
+  right: [
+    Component.Graph(),
+    Component.DesktopOnly(Component.TableOfContents()),
+    Component.Backlinks(),
+    // ★ 최근 작성한 글
+    Component.DesktopOnly(
+      Component.RecentNotes({
+        title: "최근 작성한 글",
+        limit: 5,
+        showTags: true,
+        filter: (f) => !f.frontmatter?.draft,
+        sort: (f1, f2) => {
+          const d1 = f1.dates?.published ?? new Date(0)
+          const d2 = f2.dates?.published ?? new Date(0)
+          return d2.getTime() - d1.getTime()
+        }
+      }),
+    ),
+  ],
+}
+
+// 폴더/태그 목록 페이지 레이아웃
+export const defaultListPageLayout: PageLayout = {
   beforeBody: [
     Component.ConditionalRender({
       component: Component.Breadcrumbs(),
@@ -28,41 +75,10 @@ export const defaultContentPageLayout: PageLayout = {
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    Component.Flex({
-      components: [
-        {
-          Component: Component.Search(),
-          grow: true,
-        },
-        { Component: Component.Darkmode() },
-        { Component: Component.ReaderMode() },
-      ],
-    }),
-    Component.Explorer(),
-  ],
-  right: [
-    Component.Graph(),
-    Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
-  ],
-}
-
-// components for pages that display lists of pages  (e.g. tags or folders)
-export const defaultListPageLayout: PageLayout = {
-  beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
-  left: [
-    Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
-    Component.Flex({
-      components: [
-        {
-          Component: Component.Search(),
-          grow: true,
-        },
-        { Component: Component.Darkmode() },
-      ],
-    }),
-    Component.Explorer(),
+    Component.Search(),
+    Component.Darkmode(),
+    Component.DesktopOnly(Component.Explorer({ title: "탐색" })),
   ],
   right: [],
 }
+

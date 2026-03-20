@@ -2,27 +2,33 @@ import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
 /**
- * Quartz 4 Configuration
- *
- * See https://quartz.jzhao.xyz/configuration for more information.
+ * omija-tea blog — Quartz 설정
+ * 
+ * 이 파일을 /data/quartz-blog/quartz.config.ts 에 덮어씁니다.
+ * 수정 후 git commit & push 하면 GitHub Actions에서 반영됩니다.
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "정남준 블로그",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
-    locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    analytics: null,
+    locale: "ko-KR",
+    baseUrl: "blog.omija-tea.work",
+    ignorePatterns: [
+      "private",
+      "templates",
+      ".obsidian",
+      ".trash",
+      "_attachments/.obsidian",
+    ],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
+        // Pretendard 쓰려면 custom.scss에서 import 후 여기 지정
         header: "Schibsted Grotesk",
         body: "Source Sans Pro",
         code: "IBM Plex Mono",
@@ -48,7 +54,7 @@ const config: QuartzConfig = {
           secondary: "#7b97aa",
           tertiary: "#84a59d",
           highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          textHighlight: "#fff23688",
         },
       },
     },
@@ -57,7 +63,7 @@ const config: QuartzConfig = {
     transformers: [
       Plugin.FrontMatter(),
       Plugin.CreatedModifiedDate({
-        priority: ["frontmatter", "git", "filesystem"],
+        priority: ["frontmatter", "filesystem"],
       }),
       Plugin.SyntaxHighlighting({
         theme: {
@@ -73,7 +79,11 @@ const config: QuartzConfig = {
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
     ],
-    filters: [Plugin.RemoveDrafts()],
+    filters: [
+      Plugin.RemoveDrafts(),
+      // 아래 주석을 해제하면 publish: true인 글만 배포
+      // Plugin.ExplicitPublish(),
+    ],
     emitters: [
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
@@ -81,17 +91,18 @@ const config: QuartzConfig = {
       Plugin.FolderPage(),
       Plugin.TagPage(),
       Plugin.ContentIndex({
-        enableSiteMap: true,
         enableRSS: true,
+        rssFullHtml: true,
+        enableSiteMap: true,
       }),
       Plugin.Assets(),
       Plugin.Static(),
-      Plugin.Favicon(),
       Plugin.NotFoundPage(),
-      // Comment out CustomOgImages to speed up build time
+      Plugin.Favicon(), 
       Plugin.CustomOgImages(),
     ],
   },
 }
 
 export default config
+
