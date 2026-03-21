@@ -31,7 +31,7 @@ public class Test {
     public static Test lst = new Test();
     public static int SIZE = 10;
 ```
-이거 두개 위치를 바꾸면 결과가 10임!!!! 왜 why?
+이거 두개 위치를 바꾸면 결과가 10임!! 왜?
 
 JVM이 `test` 클래스를 실행할 때, 일단 클래스 파일을 읽어서 메모리에 올림. 이때 static field의 초기화가 진행되는데, 코드가 작성된 순서 그대로 위에서 아래로 실행이 됨.
 1. JVM method 영역에 Test 클래스 정보가 기록됨. 이때 static 변수는 메모리가 할당되고 기본값 (int는 0, array는 null등등..)으로 초기화됨
