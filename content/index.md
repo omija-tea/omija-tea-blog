@@ -1,6 +1,7 @@
 ---
 title: omija-tea blog
 date: 2023-01-01
+publish: true
 ---
 기술과 개발에 대한 이야기를 기록합니다.
 
