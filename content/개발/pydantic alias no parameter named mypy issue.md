@@ -1,5 +1,5 @@
 ---
-title: "이거 오류 발생함. mypy 단에서 제대로 잡지를 못해서 no parameter named 발생(동작은 정상적으로 됨)"
+title: pydantic alias no parameter named mypy issue
 date: 2025-05-19 20:29
 tags: []
 publish: false
