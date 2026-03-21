@@ -28,9 +28,8 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        // Pretendard 쓰려면 custom.scss에서 import 후 여기 지정
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
+        header: "Pretendard Variable",
+        body: "Pretendard Variable",
         code: "IBM Plex Mono",
       },
       colors: {
@@ -98,7 +97,7 @@ const config: QuartzConfig = {
       Plugin.Assets(),
       Plugin.Static(),
       Plugin.NotFoundPage(),
-      Plugin.Favicon(), 
+      Plugin.Favicon(),
       Plugin.CustomOgImages(),
     ],
   },

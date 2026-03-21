@@ -12,7 +12,21 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [
+    Component.Comments({
+      provider: "giscus",
+      options: {
+        repo: "omija-tea/omija-tea-blog",
+        repoId: "R_kgDORs-kCQ",
+        category: "Announcements",
+        categoryId: "DIC_kwDORs-kCc4C49T9",
+        lang: "ko",
+        mapping: "pathname",
+        reactionsEnabled: true,
+        inputPosition: "bottom",
+      },
+    }),
+  ],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/omija-tea",
@@ -27,6 +41,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
+    Component.MobileOnly(Component.TableOfContents()),
   ],
   left: [
     Component.PageTitle(),
@@ -36,6 +51,12 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(
       Component.Explorer({
         title: "탐색",
+      }),
+    ),
+    Component.MobileOnly(
+      Component.Explorer({
+        title: "탐색",
+        folderDefaultState: "collapsed",
       }),
     ),
   ],
@@ -77,6 +98,12 @@ export const defaultListPageLayout: PageLayout = {
     Component.Search(),
     Component.Darkmode(),
     Component.DesktopOnly(Component.Explorer({ title: "탐색" })),
+    Component.MobileOnly(
+      Component.Explorer({
+        title: "탐색",
+        folderDefaultState: "collapsed",
+      }),
+    ),
   ],
   right: [],
 }
