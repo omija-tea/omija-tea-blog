@@ -13,7 +13,7 @@ const config: QuartzConfig = {
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
-    analytics: null,
+    analytics: { provider: "google", tagId: "G-VLZ0VXMVX9" },
     locale: "ko-KR",
     baseUrl: "blog.omija-tea.work",
     ignorePatterns: [
@@ -28,8 +28,9 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Pretendard Variable",
-        body: "Pretendard Variable",
+        // Pretendard 쓰려면 custom.scss에서 import 후 여기 지정
+        header: "Schibsted Grotesk",
+        body: "Source Sans Pro",
         code: "IBM Plex Mono",
       },
       colors: {
