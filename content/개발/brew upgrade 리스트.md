@@ -1,6 +1,6 @@
 ---
-title: "brew upgrade 리스트"
-date: 
+title: brew upgrade 리스트
+date: 2025-07-06T21:18:00
 tags: []
 publish: false
 ---

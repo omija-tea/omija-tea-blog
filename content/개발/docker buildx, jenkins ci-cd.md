@@ -44,7 +44,7 @@ docker buildx use해서 빌더 선택
 jenkins설치하려는데 이거 계속 무한 재부팅 되고있었다.
 [여기 ](https://hyesunzzang.tistory.com/216) 참고해서 했는데.. 암튼 자바 버전 문제는 아니었고
 [알고보니까](https://askubuntu.com/questions/1444777/installing-jenkins-service-fails-with-result-timeout/1445202#1445202?newreg=3af9282d42554c5c807e3da3441cc9f2) timeoutsecond문제였다. 젠킨스 service가 initial 실행 과정에서 시간을 꽤 잡아먹는데, 이때 걸리는 시간에 제한을 걸어뒀다. 라즈베리파이는 제한시간내에 initial을 모두 완료할 성능이 안돼서 자꾸 timeout에 걸려 안되고있던것. /lib/systemd/system/jenkins.service에 service탭에서 timeoutstartsec를 360으로 늘려서 해결 완료
-![[Untitled 16.png]]
+![[IMG-20260321223708185.png]]
 뿌듯
 근데 jenkins플러그인이 완벽하게 설칭가 안된다. gradle이랑 pipeline이 중요한거같은데 걔네 두개만 안된다. durable-task인가 그게 설치가 안돼서 그걸 종속으로 갖는 gradle이랑 pipeline도 안되는거같다
 sudo systemctl restart jenkins하니까 됐다. 해결완료

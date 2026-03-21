@@ -15,18 +15,18 @@ publish: false
 [그래서 이 블로그 따라함](https://junah201.medium.com/fastapi%EC%97%90-nginx-%EC%97%86%EC%9D%B4-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0-2fbf6dc2e0f2)
 ## ECR
 push 하는법
-6. ECR 하나 ohmeet-server-ecr로 만들었음
+6. ECR 하나 server-ecr로 만들었음
 7. aws 먼저 로그인 하고
-8. **aws ecr get-login-password --region ap-northeast-2| **docker login --username AWS --password-stdin 123456789012.dkr.ecr.ap-northeast-2.amazonaws.com/ohmeet-server-ecr
-9. docker tag playjnj/ohmeet:0.0.0 123456789012.dkr.ecr.ap-northeast-2.amazonaws.com/ohmeet-server-ecr:0.0.0
-10. docker push 123456789012.dkr.ecr.ap-northeast-2.amazonaws.com/ohmeet-server-ecr:0.0.0
+8. **aws ecr get-login-password --region ap-northeast-2| **docker login --username AWS --password-stdin 123456789012.dkr.ecr.ap-northeast-2.amazonaws.com/server-ecr
+9. docker tag playjnj/server:0.0.0 123456789012.dkr.ecr.ap-northeast-2.amazonaws.com/server-ecr:0.0.0
+10. docker push 123456789012.dkr.ecr.ap-northeast-2.amazonaws.com/server-ecr:0.0.0
 
 AWS로 로그인 해주고 이미지에 태그 달아주고 올림
 pull 하는법
 11. 똑같이 aws 로그인하고 docker login
 12. aws ecr describe-repositories
-13. aws ecr describe-images --repository-name ohmeet-server-ecr
-14. docker pull 123456789012.dkr.ecr.ap-northeast-2.amazonaws.com/ohmeet-server-ecr:0.0.0
+13. aws ecr describe-images --repository-name server-ecr
+14. docker pull 123456789012.dkr.ecr.ap-northeast-2.amazonaws.com/server-ecr:0.0.0
 
 
 ## https
