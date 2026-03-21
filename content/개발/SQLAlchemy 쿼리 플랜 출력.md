@@ -1,5 +1,5 @@
 ---
-title: "! 디버그용 쿼리 플랜 출력 코드"
+title: SQLAlchemy 쿼리 플랜 출력
 date: 2025-01-03 16:01
 tags:
   - topic/sqlalchemy

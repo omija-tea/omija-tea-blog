@@ -1,5 +1,5 @@
 ---
-title: "Nested Transaction in SQLAlchemy"
+title: SQLAlchemy, nested transaction
 date: 2025-01-06 19:33
 tags:
   - topic/sqlalchemy
