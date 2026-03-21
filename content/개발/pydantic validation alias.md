@@ -1,7 +1,10 @@
 ---
 title: "pydantic validation alias"
 date: 2025-06-26 21:31
-tags: []
+tags:
+  - topic/python
+  - topic/pydantic
+  - type/note
 publish: false
 ---
 ```python

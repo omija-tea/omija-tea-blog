@@ -1,7 +1,10 @@
 ---
 title: "쿼리 스펙을 객체로 표현"
 date: 2025-06-05 17:59
-tags: []
+tags:
+  - topic/architecture
+  - topic/sqlalchemy
+  - type/note
 publish: false
 ---
 현재는 도메인 중심으로 repository를 설계하고 있음.

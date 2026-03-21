@@ -1,7 +1,10 @@
 ---
 title: "postgresql database간 데이터 연산"
 date: 2025-05-21 19:21
-tags: []
+tags:
+  - topic/postgresql
+  - topic/database
+  - type/note
 publish: false
 ---
 RDS 에서 production, test 두개의 database가 굴러가고 있다.

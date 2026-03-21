@@ -1,7 +1,10 @@
 ---
 title: "rye"
 date: 2024-06-05 16:20
-tags: []
+tags:
+  - topic/python
+  - topic/docker
+  - type/note
 publish: false
 ---
 rye를 쓰자

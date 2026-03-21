@@ -1,7 +1,10 @@
 ---
 title: "pycharm ruff intergration"
 date: 2025-09-27 17:17
-tags: []
+tags:
+  - topic/python
+  - topic/pycharm
+  - type/note
 publish: false
 ---
 ruff pycharm 지원이 좀 구리다는 생각이 든다.

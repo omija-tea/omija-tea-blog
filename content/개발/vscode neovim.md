@@ -1,7 +1,10 @@
 ---
 title: "vscode neovim"
 date: 2024-05-28 19:59
-tags: []
+tags:
+  - topic/vscode
+  - topic/developer-tools
+  - type/note
 publish: false
 ---
 ### vscode neovim visual 모드에서 copilot inline chat이 안 되는 문제

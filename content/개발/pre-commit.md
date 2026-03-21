@@ -1,7 +1,10 @@
 ---
 title: "pre-commit"
 date: 2024-07-29 11:13
-tags: []
+tags:
+  - topic/python
+  - topic/git
+  - type/note
 publish: false
 ---
 rye tools install pre-commit

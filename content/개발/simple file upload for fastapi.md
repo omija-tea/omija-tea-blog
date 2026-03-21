@@ -1,7 +1,10 @@
 ---
 title: "simple file upload for fastapi"
 date: 2024-06-11 19:18
-tags: []
+tags:
+  - topic/fastapi
+  - topic/python
+  - type/note
 publish: false
 ---
 ```python

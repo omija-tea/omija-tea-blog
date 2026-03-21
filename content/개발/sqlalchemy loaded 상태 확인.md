@@ -1,7 +1,10 @@
 ---
 title: "sqlalchemy loaded 상태 확인"
 date: 2025-02-14 20:24
-tags: []
+tags:
+  - topic/sqlalchemy
+  - topic/python
+  - type/note
 publish: false
 ---
 relationship을 사용하고 있을때, 특정 attributer가 load 된 상태인지 확인해야하는 경우가 있다.

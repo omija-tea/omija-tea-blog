@@ -1,7 +1,10 @@
 ---
 title: "timezone"
 date: 2025-04-21 17:04
-tags: []
+tags:
+  - topic/postgresql
+  - topic/database
+  - type/note
 publish: false
 ---
 postgresql 에서 아래 명령어 실행해보자

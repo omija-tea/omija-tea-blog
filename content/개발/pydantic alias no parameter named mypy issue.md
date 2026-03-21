@@ -1,7 +1,10 @@
 ---
 title: pydantic alias no parameter named mypy issue
 date: 2025-05-19 20:29
-tags: []
+tags:
+  - topic/python
+  - topic/pydantic
+  - type/note
 publish: false
 ---
 [Present Field Name Rather Than Alias When Using Intellisense · Issue #5893 · pydantic/pydantic](https://github.com/pydantic/pydantic/issues/5893#issuecomment-2512807073)

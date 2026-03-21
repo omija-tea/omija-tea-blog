@@ -1,7 +1,11 @@
 ---
 title: "pytest+fastapi, contextvar, session 버그"
 date: 2024-08-28 20:38
-tags: []
+tags:
+  - topic/fastapi
+  - topic/pytest
+  - topic/sqlalchemy
+  - type/note
 publish: false
 ---
 pytest에서 dependency injection 관련 depends mocking이 안되는 문제 발생

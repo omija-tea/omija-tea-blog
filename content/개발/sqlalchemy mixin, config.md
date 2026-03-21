@@ -1,7 +1,11 @@
 ---
 title: "sqlalchemy mixin, config"
 date: 2024-07-30 20:07
-tags: []
+tags:
+  - topic/sqlalchemy
+  - topic/fastapi
+  - topic/python
+  - type/note
 publish: false
 ---
 ```python

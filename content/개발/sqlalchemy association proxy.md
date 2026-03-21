@@ -1,7 +1,10 @@
 ---
 title: "sqlalchemy association proxy"
 date: 2024-08-04 19:22
-tags: []
+tags:
+  - topic/sqlalchemy
+  - topic/python
+  - type/note
 publish: false
 ---
 유저와 post가 다대다 관계인데, 유저가 먼저 생성되고 post가 추가되는 방식이라고 생각하자.

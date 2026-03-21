@@ -1,7 +1,11 @@
 ---
 title: "simple fastapi schema, alembic migration"
 date: 2024-08-01 20:24
-tags: []
+tags:
+  - topic/fastapi
+  - topic/pydantic
+  - topic/alembic
+  - type/note
 publish: false
 ---
 ```python

@@ -1,7 +1,10 @@
 ---
 title: "RDS 다운 (12시간)"
 date: 2025-01-24 21:13
-tags: []
+tags:
+  - topic/aws
+  - topic/database
+  - type/log
 publish: false
 ---
 RDS가 다운되었다.

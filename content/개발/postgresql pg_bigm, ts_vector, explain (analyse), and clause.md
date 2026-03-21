@@ -1,7 +1,11 @@
 ---
 title: "도커 컨테이너 접속"
 date: 2024-10-17 19:26
-tags: []
+tags:
+  - topic/postgresql
+  - topic/search
+  - topic/sqlalchemy
+  - type/note
 publish: false
 ---
 alembic + sqlalchemy + postgresql 검색 만들기

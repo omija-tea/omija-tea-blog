@@ -1,7 +1,11 @@
 ---
 title: "pydantic alias with 상속 + fastapi"
 date: 2025-05-19 14:11
-tags: []
+tags:
+  - topic/python
+  - topic/pydantic
+  - topic/fastapi
+  - type/note
 publish: false
 ---
 ```python

@@ -1,7 +1,11 @@
 ---
 title: "sqlalchemy, alembic server_default, docker volume dump"
 date: 2024-09-04 19:04
-tags: []
+tags:
+  - topic/sqlalchemy
+  - topic/alembic
+  - topic/docker
+  - type/note
 publish: false
 ---
 default : sqlalchemy 단에서 default값을 관리해줌

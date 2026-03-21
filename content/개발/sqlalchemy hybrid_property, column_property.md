@@ -1,7 +1,10 @@
 ---
 title: "sqlalchemy hybrid_property, column_property"
 date: 2025-01-01 11:50
-tags: []
+tags:
+  - topic/sqlalchemy
+  - topic/python
+  - type/note
 publish: false
 ---
 모든 post 객체에 대해서 DB에는 저장하지 않되 항상 계산해야하는 field가 있다.

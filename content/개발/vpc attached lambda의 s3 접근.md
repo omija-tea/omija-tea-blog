@@ -1,7 +1,11 @@
 ---
 title: "vpc attached lambda의 s3 접근"
 date: 2025-02-11 16:31
-tags: []
+tags:
+  - topic/aws
+  - topic/lambda
+  - topic/s3
+  - type/note
 publish: false
 ---
 람다가 vpc private에서 돌아가도록 설정하면 s3에 접근 불가능함.

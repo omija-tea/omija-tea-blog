@@ -1,7 +1,10 @@
 ---
 title: "ssh key 생성"
 date: 
-tags: []
+tags:
+  - topic/infra
+  - topic/network
+  - type/note
 publish: false
 ---
 ```bash

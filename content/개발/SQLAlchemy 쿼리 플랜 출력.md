@@ -1,7 +1,10 @@
 ---
 title: "! 디버그용 쿼리 플랜 출력 코드"
 date: 2025-01-03 16:01
-tags: []
+tags:
+  - topic/sqlalchemy
+  - topic/postgresql
+  - type/note
 publish: false
 ---
 ```python
