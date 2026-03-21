@@ -1,0 +1,23 @@
+filters:
+  and:
+    - note["base"] == link("TIL.base")
+properties:
+  file.name:
+    displayName: 이름
+  태그:
+    displayName: 태그
+  날짜:
+    displayName: 날짜
+views:
+  - type: table
+    name: Table View
+    order:
+      - file.name
+      - 태그
+      - 날짜
+      - file.ctime
+    sort:
+      - property: 날짜
+        direction: DESC
+      - property: file.ctime
+        direction: DESC
