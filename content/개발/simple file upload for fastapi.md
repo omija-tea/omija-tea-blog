@@ -1,6 +1,6 @@
 ---
 title: "simple file upload for fastapi"
-date: 2024-06-11
+date: 2024-06-11 19:18
 tags: []
 publish: false
 ---

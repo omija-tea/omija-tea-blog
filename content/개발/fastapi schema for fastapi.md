@@ -1,6 +1,6 @@
 ---
 title: "fastapi schema for fastapi"
-date: 2024-06-10
+date: 2024-06-10 21:48
 tags: []
 publish: false
 ---

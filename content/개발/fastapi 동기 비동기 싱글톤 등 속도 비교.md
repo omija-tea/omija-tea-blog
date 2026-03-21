@@ -1,6 +1,6 @@
 ---
 title: "fastapi 동기 비동기 싱글톤 등 속도 비교"
-date: 2025-04-09
+date: 2025-04-09 15:45
 tags: []
 publish: false
 ---

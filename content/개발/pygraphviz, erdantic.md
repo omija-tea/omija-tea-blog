@@ -1,6 +1,6 @@
 ---
 title: "pygraphviz, erdantic"
-date: 2025-01-05
+date: 2025-01-05 10:40
 tags: []
 publish: false
 ---

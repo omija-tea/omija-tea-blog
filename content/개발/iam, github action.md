@@ -1,6 +1,6 @@
 ---
 title: "github actions"
-date: 2024-06-14
+date: 2024-06-14 20:05
 tags: []
 publish: false
 ---

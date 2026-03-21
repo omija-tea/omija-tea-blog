@@ -1,6 +1,6 @@
 ---
 title: "flutter android trouble shooting"
-date: 2025-02-13
+date: 2025-02-13 16:07
 tags: []
 publish: false
 ---

@@ -1,6 +1,6 @@
 ---
 title: "AI 코딩 툴에 대한 생각"
-date: 2025-08-01
+date: 2025-08-01 14:54
 tags: []
 publish: false
 ---

@@ -1,6 +1,6 @@
 ---
 title: "simple fastapi schema, alembic migration"
-date: 2024-08-01
+date: 2024-08-01 20:24
 tags: []
 publish: false
 ---

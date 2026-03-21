@@ -1,6 +1,6 @@
 ---
 title: "github action, fastapi deploy"
-date: 2024-06-05
+date: 2024-06-05 20:18
 tags: []
 publish: false
 ---

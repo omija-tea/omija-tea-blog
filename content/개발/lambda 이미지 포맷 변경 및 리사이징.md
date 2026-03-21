@@ -1,6 +1,6 @@
 ---
 title: "lambda 이미지 포맷 변경 및 리사이징"
-date: 2024-12-18
+date: 2024-12-18 11:56
 tags: []
 publish: false
 ---

@@ -1,6 +1,6 @@
 ---
 title: "pydantic alias with 상속 + fastapi"
-date: 2025-05-19
+date: 2025-05-19 14:11
 tags: []
 publish: false
 ---

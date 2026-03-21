@@ -1,6 +1,6 @@
 ---
 title: "manually build-push github action"
-date: 2024-06-11
+date: 2024-06-11 15:45
 tags: []
 publish: false
 ---

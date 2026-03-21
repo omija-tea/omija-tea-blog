@@ -1,6 +1,6 @@
 ---
 title: "nginx를 통한 load balancing with public ip"
-date: 2024-10-19
+date: 2024-10-19 20:51
 tags: []
 publish: false
 ---

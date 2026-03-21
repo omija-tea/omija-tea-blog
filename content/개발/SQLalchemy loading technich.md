@@ -1,6 +1,6 @@
 ---
 title: "SQLalchemy loading technich"
-date: 2024-10-26
+date: 2024-10-26 13:11
 tags: []
 publish: false
 ---

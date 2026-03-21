@@ -1,6 +1,6 @@
 ---
 title: "jenkins 시작-종료"
-date: 2024-03-25
+date: 2024-03-25 21:01
 tags: []
 publish: false
 ---

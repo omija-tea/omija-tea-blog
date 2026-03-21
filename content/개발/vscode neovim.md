@@ -1,6 +1,6 @@
 ---
 title: "vscode neovim"
-date: 2024-05-28
+date: 2024-05-28 19:59
 tags: []
 publish: false
 ---

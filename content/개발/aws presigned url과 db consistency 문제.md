@@ -1,6 +1,6 @@
 ---
 title: "aws presigned url과 db consistency 문제"
-date: 2024-12-18
+date: 2024-12-18 19:06
 tags: []
 publish: false
 ---

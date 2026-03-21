@@ -1,6 +1,6 @@
 ---
 title: "lambda pricing 최적화"
-date: 2024-12-20
+date: 2024-12-20 20:42
 tags: []
 publish: false
 ---

@@ -1,6 +1,6 @@
 ---
 title: "원드라이브 이름 변경-AWS CLI 자격증명"
-date: 2024-04-16
+date: 2024-04-16 20:23
 tags: []
 publish: false
 ---

@@ -1,6 +1,6 @@
 ---
 title: "vim 기본 설정"
-date: 2024-06-15
+date: 2024-06-15 14:49
 tags: []
 publish: false
 ---

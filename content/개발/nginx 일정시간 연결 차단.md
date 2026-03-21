@@ -1,6 +1,6 @@
 ---
 title: "nginx 일정시간 연결 차단"
-date: 2025-03-24
+date: 2025-03-24 20:00
 tags: []
 publish: false
 ---

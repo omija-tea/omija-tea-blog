@@ -1,6 +1,6 @@
 ---
 title: "postgresql database간 데이터 연산"
-date: 2025-05-21
+date: 2025-05-21 19:21
 tags: []
 publish: false
 ---

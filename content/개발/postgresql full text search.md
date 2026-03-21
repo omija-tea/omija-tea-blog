@@ -1,6 +1,6 @@
 ---
 title: "postgresql full text search"
-date: 2024-09-26
+date: 2024-09-26 10:48
 tags: []
 publish: false
 ---

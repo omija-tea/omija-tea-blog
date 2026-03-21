@@ -1,6 +1,6 @@
 ---
 title: "파이썬 개발할때 workspace 전체에 대한 error 표시"
-date: 2025-03-18
+date: 2025-03-18 19:05
 tags: []
 publish: false
 ---

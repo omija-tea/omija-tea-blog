@@ -1,6 +1,6 @@
 ---
 title: "RDS 다운 (12시간)"
-date: 2025-01-24
+date: 2025-01-24 21:13
 tags: []
 publish: false
 ---

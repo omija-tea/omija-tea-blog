@@ -1,6 +1,6 @@
 ---
 title: "pre-commit"
-date: 2024-07-29
+date: 2024-07-29 11:13
 tags: []
 publish: false
 ---

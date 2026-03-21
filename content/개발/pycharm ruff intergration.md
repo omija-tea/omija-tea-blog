@@ -1,6 +1,6 @@
 ---
 title: "pycharm ruff intergration"
-date: 2025-09-27
+date: 2025-09-27 17:17
 tags: []
 publish: false
 ---

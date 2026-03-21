@@ -1,6 +1,6 @@
 ---
 title: "pydantic validation alias"
-date: 2025-06-26
+date: 2025-06-26 21:31
 tags: []
 publish: false
 ---

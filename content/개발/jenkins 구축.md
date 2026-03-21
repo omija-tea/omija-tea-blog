@@ -1,6 +1,6 @@
 ---
 title: "jenkins 구축"
-date: 2024-03-04
+date: 2024-03-04 19:11
 tags: []
 publish: false
 ---

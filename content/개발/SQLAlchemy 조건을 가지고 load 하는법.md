@@ -1,6 +1,6 @@
 ---
 title: "SQLAlchemy 조건을 가지고 load 하는법"
-date: 2025-04-02
+date: 2025-04-02 20:15
 tags: []
 publish: false
 ---

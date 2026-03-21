@@ -1,6 +1,6 @@
 ---
 title: "mysql + dbeaver"
-date: 2024-04-15
+date: 2024-04-15 12:41
 tags: []
 publish: false
 ---

@@ -1,6 +1,6 @@
 ---
 title: "docker buildx, jenkins ci-cd"
-date: 2024-03-04
+date: 2024-03-04 19:25
 tags: []
 publish: false
 ---

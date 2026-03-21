@@ -1,6 +1,6 @@
 ---
 title: "sqlalchemy hybrid_property, column_property"
-date: 2025-01-01
+date: 2025-01-01 11:50
 tags: []
 publish: false
 ---

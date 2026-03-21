@@ -1,6 +1,6 @@
 ---
 title: "vpc attached lambda의 s3 접근"
-date: 2025-02-11
+date: 2025-02-11 16:31
 tags: []
 publish: false
 ---

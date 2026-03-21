@@ -1,6 +1,6 @@
 ---
 title: "발생했던 문제"
-date: 2025-01-09
+date: 2025-01-09 21:26
 tags: []
 publish: false
 ---

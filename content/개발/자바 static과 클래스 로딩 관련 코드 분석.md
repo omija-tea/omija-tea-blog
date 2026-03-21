@@ -1,6 +1,6 @@
 ---
 title: "자바 static과 클래스 로딩 관련 코드 분석"
-date: 2026-01-22
+date: 2026-01-22 21:18
 tags: []
 publish: false
 ---

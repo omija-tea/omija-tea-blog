@@ -1,6 +1,6 @@
 ---
 title: "github action buildx"
-date: 2024-06-12
+date: 2024-06-12 10:10
 tags: []
 publish: false
 ---

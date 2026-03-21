@@ -1,6 +1,6 @@
 ---
 title: "SQLTools 사용해서 db 관리하기"
-date: 2025-03-19
+date: 2025-03-19 14:55
 tags: []
 publish: false
 ---

@@ -1,6 +1,6 @@
 ---
 title: "oh-my-posh 테마 적용"
-date: 2024-04-10
+date: 2024-04-10 13:05
 tags: []
 publish: false
 ---

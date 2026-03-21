@@ -1,6 +1,6 @@
 ---
 title: "cloudflared 설치"
-date: 2025-02-18
+date: 2025-02-18 19:06
 tags: []
 publish: false
 ---

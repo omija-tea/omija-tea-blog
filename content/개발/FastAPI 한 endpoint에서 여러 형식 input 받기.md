@@ -1,6 +1,6 @@
 ---
 title: "FastAPI 한 endpoint에서 여러 형식 input 받기"
-date: 2025-05-09
+date: 2025-05-09 18:08
 tags: []
 publish: false
 ---

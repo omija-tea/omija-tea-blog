@@ -1,6 +1,6 @@
 ---
 title: "hyperv dism문제, oh-my-posh, onenote"
-date: 2024-03-05
+date: 2024-03-05 14:36
 tags: []
 publish: false
 ---

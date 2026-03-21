@@ -1,6 +1,6 @@
 ---
 title: "sqlalchemy mixin, config"
-date: 2024-07-30
+date: 2024-07-30 20:07
 tags: []
 publish: false
 ---

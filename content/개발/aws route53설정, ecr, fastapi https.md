@@ -1,6 +1,6 @@
 ---
 title: "aws route53설정, ecr, fastapi https"
-date: 2024-06-06
+date: 2024-06-06 10:50
 tags: []
 publish: false
 ---

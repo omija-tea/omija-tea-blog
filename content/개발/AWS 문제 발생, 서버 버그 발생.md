@@ -1,6 +1,6 @@
 ---
 title: "AWS 문제 발생, 서버 버그 발생"
-date: 2024-11-11
+date: 2024-11-11 19:57
 tags: []
 publish: false
 ---

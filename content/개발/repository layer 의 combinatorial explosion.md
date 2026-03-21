@@ -1,6 +1,6 @@
 ---
 title: "쿼리 스펙을 객체로 표현"
-date: 2025-06-05
+date: 2025-06-05 17:59
 tags: []
 publish: false
 ---
