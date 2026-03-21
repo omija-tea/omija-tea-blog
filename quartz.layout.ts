@@ -97,7 +97,7 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   right: [
     Component.Graph({
-      localGraph: { depth: 2, showTags: true }
+      localGraph: { depth: 1, showTags: true }
     }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
@@ -131,7 +131,6 @@ export const defaultListPageLayout: PageLayout = {
       component: Component.TagList(),
       condition: (page) => page.fileData.slug !== "index",  // index에서만 숨김
     }),
-    Component.TagList(),
   ],
   left: [
     Component.PageTitle(),
