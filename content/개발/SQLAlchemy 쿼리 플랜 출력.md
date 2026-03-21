@@ -53,7 +53,7 @@ WHERE userpostlink.post_id IN ($1::VARCHAR)
 [ALERT] Query Plan:
 Index Scan using userpostlink_pkey on public.userpostlink  (cost=0.29..317.60 rows=1 width=39) (actual time=0.246..0.840 rows=3 loops=1)
 Output: post_id, user_id, created_at
-Index Cond: ((userpostlink.post_id)::text = 'ig-C9zl-aIPdh-'::text)
+Index Cond: ((userpostlink.post_id)::text = 'ig-C9'::text)
 Planning Time: 0.082 ms
 Execution Time: 0.855 ms
 ### post_id에 index
@@ -64,7 +64,7 @@ WHERE userpostlink.post_id IN ($1::VARCHAR)
 [ALERT] Query Plan:
 Index Scan using ix_userpostlink_post_id on public.userpostlink  (cost=0.29..4.30 rows=1 width=39) (actual time=0.141..0.309 rows=3 loops=1)
 Output: post_id, user_id, created_at
-Index Cond: ((userpostlink.post_id)::text = 'ig-C9zl-aIPdh-'::text)
+Index Cond: ((userpostlink.post_id)::text = 'ig-C9'::text)
 Planning Time: 0.270 ms
 Execution Time: 0.381 ms
 

@@ -23,8 +23,8 @@ alias dbtunnel="ssh -N my-server-tunnel"
 5. 위처럼 .zshrc에 alias 잡아서 편하게 쓰자
 6. SQLTools에 DB connection 추가하기
 
-![[image 17.png]]
+![[IMG-20260321222022126.png]]
 7. ssl 설정 안하면 no pg_hba.conf 에러가 발생함. 아래처럼 바꿔주자
 
-![[image 18.png]]
+![[IMG-20260321222022180.png]]
 8. 터미널에서 dbtunnel 실행시키고 db 연결하면 됨
