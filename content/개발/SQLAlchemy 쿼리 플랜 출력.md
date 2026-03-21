@@ -31,17 +31,17 @@ def explain_before_cursor_execute(
 ### 기존
 Seq Scan on public.userpostlink  (cost=0.02..372.63 rows=13 width=39) (actual time=0.063..1.810 rows=27 loops=1)
 Output: post_id, user_id, created_at
-Filter: ((userpostlink.post_id)::text = ANY ('{ig-C9oLgM_pEE3,ig-C9zl-aIPdh-,ig-C_5NJ0lMpgO,ig-C_IOT2hJYne,ig-C_aVMruvV9s,ig-Cz5Y5Lqvqpa,ig-DAa1D-RAFFq,ig-C88q6Sphdly,ig-C-Pw_ufSrlU}'::text[]))
+Filter: ((userpostlink.post_id)::text = ANY ('{ig-123,ig-C9zl-aIPdh-,ig-123,ig-123,ig-123,ig-123,ig-123,ig-123,ig-C-123}'::text[]))
 Rows Removed by Filter: 14954
 Planning Time: 0.053 ms
 Execution Time: 1.815 ms
 ### post_id에 index
 Bitmap Heap Scan on public.userpostlink  (cost=39.91..82.73 rows=29 width=39) (actual time=1.379..2.355 rows=54 loops=1)
 Output: post_id, user_id, created_at
-Recheck Cond: ((userpostlink.post_id)::text = ANY ('{ig-DAVmbAdPR0t,ig-DASz4zryXFw,ig-C-h-F58SNNO,ig-C-mupxnvQpk,ig-C-ox8UVy7Rx,ig-C-rqdeFoQF9,ig-C1LgA29y449,ig-C2_6NtqPO7E,ig-C3PwAHOvpCa,ig-C3PxyMfhUyn,ig-C6K5be6L5VP,ig-C7-NS01yXHy,ig-C7WGwFwSk9c,ig-C7gaCJcghtT,ig-C-MGvEjSY8F,ig-C8eLDUVSnJx,ig-C9--pa_pO_E,ig-C98tMzVtsOG,ig-C9APt5Cv6ph,ig-C9Ey-S_u2FP}'::text[]))
+Recheck Cond: ((userpostlink.post_id)::text = ANY ('{ig-123,ig-123,ig-C-h-123,ig-C-123,ig-C-123,ig-C-123,ig-123,ig-123,ig-123,ig-123,ig-123,ig-C7-123,ig-123,ig-123,ig-C-123,ig-123,ig-C9--123,ig-123,ig-123,ig-123}'::text[]))
 Heap Blocks: exact=26
 ->  Bitmap Index Scan on ix_userpostlink_post_id  (cost=0.00..39.85 rows=29 width=0) (actual time=1.355..1.355 rows=54 loops=1)
-Index Cond: ((userpostlink.post_id)::text = ANY ('{ig-DAVmbAdPR0t,ig-DASz4zryXFw,ig-C-h-F58SNNO,ig-C-mupxnvQpk,ig-C-ox8UVy7Rx,ig-C-rqdeFoQF9,ig-C1LgA29y449,ig-C2_6NtqPO7E,ig-C3PwAHOvpCa,ig-C3PxyMfhUyn,ig-C6K5be6L5VP,ig-C7-NS01yXHy,ig-C7WGwFwSk9c,ig-C7gaCJcghtT,ig-C-MGvEjSY8F,ig-C8eLDUVSnJx,ig-C9--pa_pO_E,ig-C98tMzVtsOG,ig-C9APt5Cv6ph,ig-C9Ey-S_u2FP}'::text[]))
+Index Cond: ((userpostlink.post_id)::text = ANY ('{ig-123,ig-123,ig-C-h-123,ig-C-123,ig-C-123,ig-C-123,ig-123,ig-123,ig-123,ig-123,ig-123,ig-C7-123,ig-123,ig-123,ig-C-123,ig-123,ig-C9--123,ig-123,ig-123,ig-123}'::text[]))
 Planning Time: 0.158 ms
 Execution Time: 2.384 ms
 ## 단독 post 조회
@@ -53,7 +53,7 @@ WHERE userpostlink.post_id IN ($1::VARCHAR)
 [ALERT] Query Plan:
 Index Scan using userpostlink_pkey on public.userpostlink  (cost=0.29..317.60 rows=1 width=39) (actual time=0.246..0.840 rows=3 loops=1)
 Output: post_id, user_id, created_at
-Index Cond: ((userpostlink.post_id)::text = 'ig-C9'::text)
+Index Cond: ((userpostlink.post_id)::text = 'ig-123'::text)
 Planning Time: 0.082 ms
 Execution Time: 0.855 ms
 ### post_id에 index
@@ -64,7 +64,7 @@ WHERE userpostlink.post_id IN ($1::VARCHAR)
 [ALERT] Query Plan:
 Index Scan using ix_userpostlink_post_id on public.userpostlink  (cost=0.29..4.30 rows=1 width=39) (actual time=0.141..0.309 rows=3 loops=1)
 Output: post_id, user_id, created_at
-Index Cond: ((userpostlink.post_id)::text = 'ig-C9'::text)
+Index Cond: ((userpostlink.post_id)::text = 'ig-123'::text)
 Planning Time: 0.270 ms
 Execution Time: 0.381 ms
 
