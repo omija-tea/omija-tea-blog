@@ -72,14 +72,14 @@ http {
 
     server {
         listen       80;
-        server_name  api.ohmeet.app;
+        server_name  api.server.app;
         return 308 https://$host$request_uri;
         }
 
 
     server {
         listen       443 ssl;
-        server_name  api.ohmeet.app;
+        server_name  api.server.app;
 
         ssl_certificate "/etc/cloudflare_cert/cert.pem";
         ssl_certificate_key "/etc/cloudflare_cert/key.pem";

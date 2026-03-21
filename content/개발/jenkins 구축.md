@@ -8,7 +8,7 @@ jenkins를 공부하고있다.
 jenkins에서 sh 명령어같은걸 수행하면 누가 수행시켜주나 확인해봤는데, 내 raspberry pi 운영체제에 jenkins라는 이름의 사용자가 추가되고 그 사용자가 명령어를 수행시키는 방식인것 같다.
 jenkins관리의 system을 들어가니까 홈 디렉토리(var/lib/jenkins)가 나온다.
 > [!note]+ 사진
-> ![[Untitled 20.png]]
+> ![[IMG-20260321223048499.png]]
 
 내 깃헙에 sh_test레포지토리 만들고 test.sh(echo hello) 파일을 넣어뒀다.
 위에처럼 설정하고 아래 execute shell에서 sh test.sh하니까 동작 성공

@@ -64,9 +64,9 @@ jobs:
 ```
 일단 첫번째로 이렇게 작성해 봤음. github tag를 이용해서 버저닝을 하고 싶었다.
 `git tag v0.0.~` 를 하고 `git push origin —tags` 를 사용해서 태그를 알려줬음
-![[Untitled 18.png]]
+![[IMG-20260321223057530.png]]
 태그를 아주 잘 잡는 모습
-![[Untitled 19.png]]
+![[IMG-20260321223057600.png]]
 앗차차… config는 gitignore대상이라 서버에 안 올라가 있다. 그걸 생각을 못했네
 [https://ji5485.github.io/post/2021-06-26/create-env-with-github-actions-secrets/](https://ji5485.github.io/post/2021-06-26/create-env-with-github-actions-secrets/) 여기를 참고했다
 `git push origin :v0.0.13` 이걸로 원격 저장소 태그 삭제 가능 `git tag -d v0.0.13` 이걸로 로컬 태그 삭제 가능

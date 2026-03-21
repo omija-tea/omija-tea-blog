@@ -88,7 +88,7 @@ pivips에서는 이미지를 열때 image = pyvips.Image.new_from_file(download_
 ## 근데 막상 lambda 올리니까
 pyvips보다 pillow가 훨씬 빠르다. pyvips가 맥에서 더 잘 동작하나봄?
 pillow
-![[image 11.png]]
+![[IMG-20260321223033692.png]]
 pyvips. 줜나게 형편없는 성능을 자랑하는걸 볼 수 있다
-![[image 12.png]]
+![[IMG-20260321223033750.png]]
 왜일까. 나중에 따로 공부해보자.
