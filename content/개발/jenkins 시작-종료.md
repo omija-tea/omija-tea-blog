@@ -1,7 +1,10 @@
 ---
 title: "jenkins 시작-종료"
 date: 2024-03-25 21:01
-tags: []
+tags:
+  - topic/jenkins
+  - topic/cicd
+  - type/note
 publish: false
 ---
 젠킨스는 restfulAPI를 통해 종료/재시작 등 가능.

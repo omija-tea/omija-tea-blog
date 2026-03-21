@@ -1,7 +1,11 @@
 ---
 title: "google oauth2, fastapi cors"
 date: 2024-06-08 20:18
-tags: []
+tags:
+  - topic/oauth
+  - topic/fastapi
+  - topic/cors
+  - type/note
 publish: false
 ---
 ### google oauth2 with fastapi

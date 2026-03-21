@@ -1,7 +1,10 @@
 ---
 title: "lambda pricing 최적화"
 date: 2024-12-20 20:42
-tags: []
+tags:
+  - topic/aws
+  - topic/lambda
+  - type/note
 publish: false
 ---
 환율 : 1446

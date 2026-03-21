@@ -1,7 +1,11 @@
 ---
 title: "fastapi 동기 비동기 싱글톤 등 속도 비교"
 date: 2025-04-09 15:45
-tags: []
+tags:
+  - topic/fastapi
+  - topic/python
+  - topic/async
+  - type/note
 publish: false
 ---
 ## async 엔드포인트, 싱글톤 서비스, async 함수 호출

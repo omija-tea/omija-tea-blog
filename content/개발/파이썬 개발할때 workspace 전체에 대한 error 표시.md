@@ -1,7 +1,10 @@
 ---
 title: "파이썬 개발할때 workspace 전체에 대한 error 표시"
 date: 2025-03-18 19:05
-tags: []
+tags:
+  - topic/python
+  - topic/vscode
+  - type/note
 publish: false
 ---
 ![[IMG-20260321221153029.png]]

@@ -1,7 +1,10 @@
 ---
 title: "flutter android trouble shooting"
 date: 2025-02-13 16:07
-tags: []
+tags:
+  - topic/flutter
+  - topic/android
+  - type/note
 publish: false
 ---
 ## ./gradlew clean 실패 문제

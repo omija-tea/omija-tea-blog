@@ -1,7 +1,11 @@
 ---
 title: "cloudfront - cloudflare dns 연결"
 date: 2024-12-22 20:04
-tags: []
+tags:
+  - topic/aws
+  - topic/cloudflare
+  - topic/infra
+  - type/note
 publish: false
 ---
 1. cloudflare에서 도메인 발급

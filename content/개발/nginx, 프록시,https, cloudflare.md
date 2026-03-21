@@ -1,7 +1,11 @@
 ---
 title: "vim 기본 설정"
 date: 2024-06-15 14:49
-tags: []
+tags:
+  - topic/nginx
+  - topic/cloudflare
+  - topic/https
+  - type/note
 publish: false
 ---
 # vim 기본 설정

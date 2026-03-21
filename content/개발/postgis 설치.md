@@ -1,7 +1,10 @@
 ---
 title: "postgis 설치"
 date: 2024-08-02 18:08
-tags: []
+tags:
+  - topic/postgresql
+  - topic/database
+  - type/note
 publish: false
 ---
 ### mac

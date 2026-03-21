@@ -1,7 +1,11 @@
 ---
 title: "jenkins 구축"
 date: 2024-03-04 19:11
-tags: []
+tags:
+  - topic/jenkins
+  - topic/cicd
+  - topic/raspberrypi
+  - type/note
 publish: false
 ---
 jenkins를 공부하고있다.

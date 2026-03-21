@@ -1,7 +1,10 @@
 ---
 title: Untitled
 date: 2024-09-29T21:25:00
-tags: []
+tags:
+  - topic/alembic
+  - topic/postgresql
+  - type/note
 publish: false
 ---
 서로 상호변경이 쉽지않은 type이 있음 ex : uuid ↔ str

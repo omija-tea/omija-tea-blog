@@ -1,7 +1,10 @@
 ---
 title: "rye 설치. 하라는대로 하면 됨"
 date: 2025-04-22 20:36
-tags: []
+tags:
+  - topic/aws
+  - topic/python
+  - type/note
 publish: false
 ---
 ```bash

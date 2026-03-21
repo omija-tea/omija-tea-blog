@@ -1,7 +1,11 @@
 ---
 title: "docker buildx, jenkins ci-cd"
 date: 2024-03-04 19:25
-tags: []
+tags:
+  - topic/docker
+  - topic/jenkins
+  - topic/cicd
+  - type/note
 publish: false
 ---
 buildx 구축 시작

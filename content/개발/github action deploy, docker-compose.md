@@ -1,7 +1,11 @@
 ---
 title: "github action deploy"
 date: 2024-06-17 21:13
-tags: []
+tags:
+  - topic/docker
+  - topic/cicd
+  - topic/nginx
+  - type/note
 publish: false
 ---
 ### volume

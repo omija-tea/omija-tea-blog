@@ -1,7 +1,10 @@
 ---
 title: "fastapi layered architecture"
 date: 2024-06-09 17:11
-tags: []
+tags:
+  - topic/fastapi
+  - topic/architecture
+  - type/note
 publish: false
 ---
 architecture 없이 fastapi 공식 guide 스타일로 마구잡이 개발하다가 refactoring과 테스팅이 매우 어려워졌다.

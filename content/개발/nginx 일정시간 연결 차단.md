@@ -1,7 +1,10 @@
 ---
 title: "nginx 일정시간 연결 차단"
 date: 2025-03-24 20:00
-tags: []
+tags:
+  - topic/nginx
+  - topic/infra
+  - type/note
 publish: false
 ---
 ```bash

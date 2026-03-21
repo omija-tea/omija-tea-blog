@@ -1,7 +1,9 @@
 ---
 title: "원드라이브 이름 변경-AWS CLI 자격증명"
 date: 2024-04-16 20:23
-tags: []
+tags:
+  - topic/aws
+  - type/note
 publish: false
 ---
 원드라이브 한글로 나오는 문제 해결 방법 :

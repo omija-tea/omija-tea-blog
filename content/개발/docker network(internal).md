@@ -1,7 +1,10 @@
 ---
 title: "docker network(internal)"
 date: 2024-10-19 20:44
-tags: []
+tags:
+  - topic/docker
+  - topic/network
+  - type/note
 publish: false
 ---
 internal : true를 안주면 

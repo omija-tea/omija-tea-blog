@@ -1,7 +1,10 @@
 ---
 title: "github page 업로드"
 date: 2024-04-02 19:14
-tags: []
+tags:
+  - topic/git
+  - topic/cicd
+  - type/note
 publish: false
 ---
 github page작업 계속 하는중.

@@ -1,7 +1,9 @@
 ---
 title: "notion education plan 사용법"
 date: 
-tags: []
+tags:
+  - topic/productivity
+  - type/note
 publish: false
 ---
 싹다강퇴. upgrade plan해서 플랜 에듀케이션으로.

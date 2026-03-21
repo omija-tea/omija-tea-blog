@@ -1,7 +1,11 @@
 ---
 title: "aws route53설정, ecr, fastapi https"
 date: 2024-06-06
-tags: []
+tags:
+  - topic/aws
+  - topic/fastapi
+  - topic/infra
+  - type/note
 publish: false
 ---
 1. 간단하게 퍼블릭 하나 올리고 8000번 포트 인바운드로 잡아놨음

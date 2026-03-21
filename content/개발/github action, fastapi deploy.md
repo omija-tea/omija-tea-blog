@@ -1,7 +1,11 @@
 ---
 title: "github action, fastapi deploy"
 date: 2024-06-05 20:18
-tags: []
+tags:
+  - topic/fastapi
+  - topic/docker
+  - topic/cicd
+  - type/note
 publish: false
 ---
 ```docker

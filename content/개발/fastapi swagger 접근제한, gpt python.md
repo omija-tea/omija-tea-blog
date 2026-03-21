@@ -1,7 +1,11 @@
 ---
 title: "fastapi swagger 접근제한, gpt python"
 date: 2024-08-03 21:29
-tags: []
+tags:
+  - topic/fastapi
+  - topic/python
+  - topic/openai
+  - type/note
 publish: false
 ---
 ### fastapi swagger 접근제한
@@ -80,7 +84,7 @@ async def get_summary_from_post(post: str) -> list:
     )
     summary = response.choices[0].message.content
     summary_json = json.loads(summary)
-    return places_json.get("summary", [])
+    return summary_json.get("summary", [])
 
 ```
 이렇게 해놓으면 나중에 aiohttp로 비동기식 무차별폭격 호출해도 잘 됨

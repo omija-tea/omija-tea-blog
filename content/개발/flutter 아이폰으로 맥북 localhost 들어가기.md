@@ -1,7 +1,10 @@
 ---
 title: "flutter 아이폰으로 맥북 localhost 들어가기"
 date: 2025-02-26 18:19
-tags: []
+tags:
+  - topic/flutter
+  - topic/ios
+  - type/note
 publish: false
 ---
 1. 맥북과 아이폰 연결

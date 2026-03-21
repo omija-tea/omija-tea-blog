@@ -1,7 +1,10 @@
 ---
 title: "자바 static과 클래스 로딩 관련 코드 분석"
 date: 2026-01-22 21:18
-tags: []
+tags:
+  - topic/java
+  - topic/jvm
+  - type/note
 publish: false
 ---
 ```java

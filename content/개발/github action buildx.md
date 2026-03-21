@@ -1,7 +1,11 @@
 ---
 title: "github action buildx"
 date: 2024-06-12 10:10
-tags: []
+tags:
+  - topic/docker
+  - topic/cicd
+  - topic/aws
+  - type/note
 publish: false
 ---
 t4g.small이 이번 2024년동안 무료라길래 한번 써보기로 했다.

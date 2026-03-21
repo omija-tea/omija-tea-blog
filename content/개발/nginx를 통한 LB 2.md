@@ -1,7 +1,10 @@
 ---
 title: "nginx를 통한 LB 2"
 date: 
-tags: []
+tags:
+  - topic/nginx
+  - topic/infra
+  - type/note
 publish: false
 ---
 ```python

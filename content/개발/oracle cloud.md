@@ -1,7 +1,9 @@
 ---
 title: oracle cloud
 date: 2023-03-21T20:21:00
-tags: []
+tags:
+  - topic/infra
+  - type/note
 publish: false
 ---
 회원가입하고 인스턴스 만들면 된다.

@@ -1,7 +1,11 @@
 ---
 title: "cloudflared 설치"
 date: 2025-02-18 19:06
-tags: []
+tags:
+  - topic/aws
+  - topic/cloudflare
+  - topic/infra
+  - type/note
 publish: false
 ---
 cloudflare tunnel을 사용하면 ip를 숨길수 있다길래 한번 시도해보자

@@ -1,7 +1,9 @@
 ---
 title: brew upgrade 리스트
 date: 2025-07-06T21:18:00
-tags: []
+tags:
+  - topic/macos
+  - type/note
 publish: false
 ---
 ```bash

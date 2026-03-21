@@ -1,7 +1,11 @@
 ---
 title: "lambda 이미지 포맷 변경 및 리사이징"
 date: 2024-12-18 11:56
-tags: []
+tags:
+  - topic/aws
+  - topic/lambda
+  - topic/python
+  - type/note
 publish: false
 ---
 ```python

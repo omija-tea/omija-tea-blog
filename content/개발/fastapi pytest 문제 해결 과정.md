@@ -1,7 +1,11 @@
 ---
 title: "발생했던 문제"
 date: 2025-01-09 21:26
-tags: []
+tags:
+  - topic/fastapi
+  - topic/pytest
+  - topic/python
+  - type/note
 publish: false
 ---
 최상위 conftest.py

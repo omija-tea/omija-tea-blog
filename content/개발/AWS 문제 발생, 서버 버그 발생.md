@@ -1,7 +1,10 @@
 ---
 title: "AWS 문제 발생, 서버 버그 발생"
 date: 2024-11-11 19:57
-tags: []
+tags:
+  - topic/aws
+  - topic/infra
+  - type/log
 publish: false
 ---
 서버에 버그가 나서 빨리 들어가서 확인해야하는데 aws security group에 문제가 발생함

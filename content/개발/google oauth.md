@@ -1,7 +1,10 @@
 ---
 title: "google oauth"
 date: 2024-06-08 11:24
-tags: []
+tags:
+  - topic/oauth
+  - topic/fastapi
+  - type/note
 publish: false
 ---
 oauth가 뭘까? 제 3자로부터 받아온 인증정보를 이용하는것이다.
