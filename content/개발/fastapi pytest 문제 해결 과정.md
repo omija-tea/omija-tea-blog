@@ -85,6 +85,4 @@ test환경의 세션과 AsyncClient환경의 세션이 다르다보니 session_c
 세션을 발행받은곳은 test 환경인데 AsyncClient환경에서 세션을 닫아버리려고 시도하는 등 꼬여버림
 ### 해결
 테스트환경에서의 db세션과 AsyncClient 환경에서의 db세션을 분리. 
-나는 귀찮아서 test용  환경변수 파일을 따로 만들어서 사용하고있지만, 혹시 환경변수를 override해서 사용하려고 하는 사람이 있다면 AsyncClient환경의 세션을 만들고 app.dependency_override를 통해 get_session 함수를 테스트 환경에서 fastapi app 용으로 따로 발행한 db session으로 오버라이드 해버리는 방법도 가능할 듯 하다
-
-## 
+나는  test용  환경변수 파일을 따로 만들어서 사용하고있지만, 혹시 환경변수를 override해서 사용하려고 하는 사람이 있다면 AsyncClient환경의 세션을 만들고 app.dependency_override를 통해 get_session 함수를 테스트 환경에서 fastapi app 용으로 따로 발행한 db session으로 오버라이드 해버리는 방법도 가능할 듯 하다
