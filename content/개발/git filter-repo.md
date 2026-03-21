@@ -1,5 +1,5 @@
 ---
-title: "git filter-repo, alembic altertable, parser 아키텍처"
+title: git filter-repo
 date: 2024-09-29 21:24
 tags:
   - topic/git
@@ -21,5 +21,5 @@ my-github-id <my-school-email@khu.ac.kr> <my-gmail@gmail.com>
 6. git push --force origin main
 7. git push —force origin beta …
 
-![[IMG-20260321223436403.png]]
+![[IMG-20260321234700705.png]]
 사라진 커밋 복구 완료

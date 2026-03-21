@@ -1,5 +1,5 @@
 ---
-title: "쿼리 스펙을 객체로 표현"
+title: repository layer 의 combinatorial explosion
 date: 2025-06-05 17:59
 tags:
   - topic/architecture

@@ -1,5 +1,5 @@
 ---
-title: "mecab-ko 다운로드 및 설치 (mac 기준)"
+title: mecab 형태소 분석기 (은전한닢)
 date: 2025-01-17 13:47
 tags:
   - topic/python

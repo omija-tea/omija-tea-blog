@@ -1,5 +1,5 @@
 ---
-title: "cloudflared 설치"
+title: ec2에 cloudflared 구성 해보기
 date: 2025-02-18 19:06
 tags:
   - topic/aws

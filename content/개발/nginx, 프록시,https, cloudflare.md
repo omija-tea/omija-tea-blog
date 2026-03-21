@@ -1,5 +1,5 @@
 ---
-title: "vim 기본 설정"
+title: nginx, 프록시,https, cloudflare
 date: 2024-06-15 14:49
 tags:
   - topic/nginx

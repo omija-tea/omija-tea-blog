@@ -1,5 +1,5 @@
 ---
-title: "github actions"
+title: iam, github action
 date: 2024-06-14 20:05
 tags:
   - topic/aws

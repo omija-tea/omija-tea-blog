@@ -1,5 +1,5 @@
 ---
-title: "github action deploy"
+title: github action deploy, docker-compose
 date: 2024-06-17 21:13
 tags:
   - topic/docker

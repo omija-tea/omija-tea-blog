@@ -1,5 +1,5 @@
 ---
-title: "도커 컨테이너 접속"
+title: postgresql pg_bigm, ts_vector, explain (analyse), and clause
 date: 2024-10-17 19:26
 tags:
   - topic/postgresql

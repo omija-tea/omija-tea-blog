@@ -1,5 +1,5 @@
 ---
-title: "rye 설치. 하라는대로 하면 됨"
+title: ec2에서 notebook을 하자
 date: 2025-04-22 20:36
 tags:
   - topic/aws

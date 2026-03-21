@@ -1,5 +1,5 @@
 ---
-title: "alembic alter column - using clause"
+title: alembic altertable
 date: 2024-09-29T21:25:00
 tags:
   - topic/alembic
