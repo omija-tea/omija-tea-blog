@@ -82,7 +82,7 @@ class PlaceService:
         query = PlaceQuery.for_detail_page(place_id)
         return self.place_repository.find(query)
 ```
-머 이런식으로
+이런식으로
 2. CQRS 패턴을 사용한다
 
-command용과 query용을 분리해서 사용하는건데… 아직까지 우리 서비스에 이정도까지 하는건 오버킬 같
+command용과 query용을 분리해서 사용하는건데… 아직까지 우리 서비스에 이정도까지 하는건 오버킬 같다

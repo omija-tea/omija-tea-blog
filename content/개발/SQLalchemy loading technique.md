@@ -1,5 +1,5 @@
 ---
-title: "SQLalchemy loading technich"
+title: SQLalchemy loading technique
 date: 2024-10-26 13:11
 tags: []
 publish: false
