@@ -96,11 +96,9 @@ export const defaultContentPageLayout: PageLayout = {
     ),
   ],
   right: [
-    Component.Graph({
-      localGraph: {
-        depth: 2,
-        showTags: true,
-      },
+    Component.ConditionalRender({
+      component: Component.Graph({ localGraph: { depth: 2, showTags: true } }),
+      condition: (page) => page.fileData.slug !== "index",  // index에서만 숨김
     }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
