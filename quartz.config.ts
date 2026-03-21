@@ -80,9 +80,9 @@ const config: QuartzConfig = {
       Plugin.Latex({ renderEngine: "katex" }),
     ],
     filters: [
-      Plugin.RemoveDrafts(),
+      // Plugin.RemoveDrafts(),
       // 아래 주석을 해제하면 publish: true인 글만 배포
-      // Plugin.ExplicitPublish(),
+      Plugin.ExplicitPublish(),
     ],
     emitters: [
       Plugin.AliasRedirects(),
