@@ -51,24 +51,64 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(
       Component.Explorer({
         title: "탐색",
+        sortFn: (a, b) => {
+          // 폴더는 항상 위로
+          if (a.isFolder && !b.isFolder) return -1
+          if (!a.isFolder && b.isFolder) return 1
+
+          // 둘 다 파일이면 날짜 내림차순 (최신 글이 위)
+          if (!a.isFolder && !b.isFolder) {
+            const dateA = a.data?.date ? new Date(a.data.date) : new Date(0)
+            const dateB = b.data?.date ? new Date(b.data.date) : new Date(0)
+            return dateB.getTime() - dateA.getTime()
+          }
+
+          // 둘 다 폴더면 이름순
+          return a.displayName.localeCompare(b.displayName, undefined, {
+            numeric: true,
+            sensitivity: "base",
+          })
+        },
       }),
     ),
     Component.MobileOnly(
       Component.Explorer({
         title: "탐색",
-        folderDefaultState: "collapsed",
+        sortFn: (a, b) => {
+          // 폴더는 항상 위로
+          if (a.isFolder && !b.isFolder) return -1
+          if (!a.isFolder && b.isFolder) return 1
+
+          // 둘 다 파일이면 날짜 내림차순 (최신 글이 위)
+          if (!a.isFolder && !b.isFolder) {
+            const dateA = a.data?.date ? new Date(a.data.date) : new Date(0)
+            const dateB = b.data?.date ? new Date(b.data.date) : new Date(0)
+            return dateB.getTime() - dateA.getTime()
+          }
+
+          // 둘 다 폴더면 이름순
+          return a.displayName.localeCompare(b.displayName, undefined, {
+            numeric: true,
+            sensitivity: "base",
+          })
+        },
       }),
     ),
   ],
   right: [
-    Component.Graph(),
+    Component.Graph({
+      localGraph: {
+        depth: 2,
+        showTags: true,
+      },
+    }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
     // ★ 최근 작성한 글
     Component.DesktopOnly(
       Component.RecentNotes({
         title: "최근 작성한 글",
-        limit: 5,
+        limit: 10,
         showTags: true,
         filter: (f) => !f.frontmatter?.draft,
         sort: (f1, f2) => {
