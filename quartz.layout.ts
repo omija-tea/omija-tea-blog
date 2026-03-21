@@ -47,6 +47,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.TableOfContents()),
   ],
   left: [
+    Component.ProfileImage(),
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
@@ -136,6 +137,7 @@ export const defaultListPageLayout: PageLayout = {
     }),
   ],
   left: [
+    Component.ProfileImage(),
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
