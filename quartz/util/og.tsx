@@ -75,6 +75,20 @@ export async function fetchTtf(
   rawFontName: string,
   weight: FontWeight,
 ): Promise<Buffer<ArrayBufferLike> | undefined> {
+  const localFontMap: Record<string, Partial<Record<number, string>>> = {
+    "Pretendard Variable": {
+      400: path.join(QUARTZ, "static", "fonts", "Pretendard-Regular.ttf"),
+      700: path.join(QUARTZ, "static", "fonts", "Pretendard-Bold.ttf"),
+    },
+  }
+  const localPath = localFontMap[rawFontName]?.[weight as number]
+  if (localPath) {
+    try {
+      return await fs.readFile(localPath)
+    } catch {
+      // 로컬 파일 없으면 아래 Google Fonts로 계속
+    }
+  }
   const fontName = rawFontName.replaceAll(" ", "+")
   const cacheKey = `${fontName}-${weight}`
   const cacheDir = path.join(QUARTZ, ".quartz-cache", "fonts")

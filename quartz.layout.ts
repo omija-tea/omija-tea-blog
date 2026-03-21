@@ -96,9 +96,8 @@ export const defaultContentPageLayout: PageLayout = {
     ),
   ],
   right: [
-    Component.ConditionalRender({
-      component: Component.Graph({ localGraph: { depth: 2, showTags: true } }),
-      condition: (page) => page.fileData.slug !== "index",  // index에서만 숨김
+    Component.Graph({
+      localGraph: { depth: 2, showTags: true }
     }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
@@ -128,6 +127,10 @@ export const defaultListPageLayout: PageLayout = {
     }),
     Component.ArticleTitle(),
     Component.ContentMeta(),
+    Component.ConditionalRender({
+      component: Component.TagList(),
+      condition: (page) => page.fileData.slug !== "index",  // index에서만 숨김
+    }),
     Component.TagList(),
   ],
   left: [
