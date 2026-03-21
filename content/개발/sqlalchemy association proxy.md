@@ -5,7 +5,7 @@ tags:
   - topic/sqlalchemy
   - topic/python
   - type/note
-publish: false
+publish: true
 ---
 유저와 post가 다대다 관계인데, 유저가 먼저 생성되고 post가 추가되는 방식이라고 생각하자.
 ```python

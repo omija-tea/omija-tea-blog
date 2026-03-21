@@ -5,7 +5,7 @@ tags:
   - topic/sqlalchemy
   - topic/database
   - type/note
-publish: false
+publish: true
 ---
 # Nested Transaction in SQLAlchemy
 ```python

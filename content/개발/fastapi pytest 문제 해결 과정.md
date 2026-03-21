@@ -6,7 +6,7 @@ tags:
   - topic/pytest
   - topic/python
   - type/note
-publish: false
+publish: true
 ---
 최상위 conftest.py
 ```python

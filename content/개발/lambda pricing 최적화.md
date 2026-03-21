@@ -5,7 +5,7 @@ tags:
   - topic/aws
   - topic/lambda
   - type/note
-publish: false
+publish: true
 ---
 환율 : 1446
 512:

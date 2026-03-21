@@ -6,7 +6,7 @@ tags:
   - topic/lambda
   - topic/s3
   - type/note
-publish: false
+publish: true
 ---
 람다가 vpc private에서 돌아가도록 설정하면 s3에 접근 불가능함.
 ## 해결방법

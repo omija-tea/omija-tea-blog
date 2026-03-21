@@ -5,7 +5,7 @@ tags:
   - topic/python
   - topic/git
   - type/note
-publish: false
+publish: true
 ---
 rye tools install pre-commit
 pre-commit install

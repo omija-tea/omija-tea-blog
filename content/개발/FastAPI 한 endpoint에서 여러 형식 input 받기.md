@@ -6,7 +6,7 @@ tags:
   - topic/python
   - topic/pydantic
   - type/note
-publish: false
+publish: true
 ---
 ```python
 

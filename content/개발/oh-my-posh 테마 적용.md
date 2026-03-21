@@ -5,7 +5,7 @@ tags:
   - topic/windows
   - topic/terminal
   - type/note
-publish: false
+publish: true
 ---
 oh my posh 테마 적용 방법
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine

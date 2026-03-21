@@ -5,7 +5,7 @@ tags:
   - topic/vscode
   - topic/developer-tools
   - type/note
-publish: false
+publish: true
 ---
 ### vscode neovim visual 모드에서 copilot inline chat이 안 되는 문제
 ```json

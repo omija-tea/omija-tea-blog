@@ -5,7 +5,7 @@ tags:
   - topic/fastapi
   - topic/pydantic
   - type/note
-publish: false
+publish: true
 ---
 ```python
 from pydantic import BaseModel, Field

@@ -5,7 +5,7 @@ tags:
   - topic/aws
   - topic/cicd
   - type/note
-publish: false
+publish: true
 ---
 iam을 이용하여 여러 명의 admin 계정을 만들었음. 루트 계정 쓰다가 비밀번호 실수로 틀리면 example.com으로 인증코드 날아가는거 그거 일일이 관리해줄순 없으니까…
 

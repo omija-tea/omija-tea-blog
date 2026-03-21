@@ -6,7 +6,7 @@ tags:
   - topic/search
   - topic/sqlalchemy
   - type/note
-publish: false
+publish: true
 ---
 alembic + sqlalchemy + postgresql 검색 만들기
 

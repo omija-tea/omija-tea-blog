@@ -5,7 +5,7 @@ tags:
   - topic/java
   - topic/jvm
   - type/note
-publish: false
+publish: true
 ---
 ```java
 public class Test {

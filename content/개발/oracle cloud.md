@@ -4,7 +4,7 @@ date: 2023-03-21T20:21:00
 tags:
   - topic/infra
   - type/note
-publish: false
+publish: true
 ---
 회원가입하고 인스턴스 만들면 된다.
 oracle linux 맘에안드니까 쓰지 말자. dnf가 뭔가 너무 별로다.

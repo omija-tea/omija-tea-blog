@@ -5,7 +5,7 @@ tags:
   - topic/database
   - topic/mysql
   - type/note
-publish: false
+publish: true
 ---
 mysql 설치해서 root로 로그인. 쿼리 실행시키고 dbeaver 새로고
 ![[IMG-20260321223011773.png]]

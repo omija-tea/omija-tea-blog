@@ -6,7 +6,7 @@ tags:
   - topic/fastapi
   - topic/python
   - type/note
-publish: false
+publish: true
 ---
 ```python
 from datetime import datetime

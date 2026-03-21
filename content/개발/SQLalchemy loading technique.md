@@ -5,7 +5,7 @@ tags:
   - topic/sqlalchemy
   - topic/python
   - type/note
-publish: false
+publish: true
 ---
 N:1 에서는 joinedload가 좋고 N:M에서는 selectinload가 좋다고 하나…. 머리쓰기 귀찮으니까 그냥 전부다 selectinload를 쓰도록 하자. 가장 최신형의 방법으로, 쿼리를 쪼개서 날린다.
 ```python

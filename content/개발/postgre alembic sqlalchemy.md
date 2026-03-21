@@ -6,6 +6,6 @@ tags:
   - topic/alembic
   - topic/sqlalchemy
   - type/note
-publish: false
+publish: true
 ---
 db 만들고 grant 해줘야 alembic auto generate 됨

@@ -6,7 +6,7 @@ tags:
   - topic/fastapi
   - topic/infra
   - type/note
-publish: false
+publish: true
 ---
 1. 간단하게 퍼블릭 하나 올리고 8000번 포트 인바운드로 잡아놨음
 2. ec2에 fastapi 예제 올려놓음

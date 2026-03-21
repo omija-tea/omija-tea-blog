@@ -5,7 +5,7 @@ tags:
   - topic/infra
   - topic/network
   - type/note
-publish: false
+publish: true
 ---
 ```bash
 ssh-keygen -t ed25519 -C "id@google.com"

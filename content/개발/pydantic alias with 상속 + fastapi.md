@@ -6,7 +6,7 @@ tags:
   - topic/pydantic
   - topic/fastapi
   - type/note
-publish: false
+publish: true
 ---
 ```python
 class MyModel(BaseModel):

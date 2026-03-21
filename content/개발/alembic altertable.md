@@ -5,7 +5,7 @@ tags:
   - topic/alembic
   - topic/postgresql
   - type/note
-publish: false
+publish: true
 ---
 서로 상호변경이 쉽지않은 type이 있음 ex : uuid ↔ str
 이때는 using clause를 사용해주어야함. ex) using supabase_sub::uuid

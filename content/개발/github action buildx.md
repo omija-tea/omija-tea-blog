@@ -6,7 +6,7 @@ tags:
   - topic/cicd
   - topic/aws
   - type/note
-publish: false
+publish: true
 ---
 t4g.small이 이번 2024년동안 무료라길래 한번 써보기로 했다.
 다만 아키텍쳐가 github-action 기본 architecture인 x86이 아닌 arm이다.

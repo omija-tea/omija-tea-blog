@@ -5,7 +5,7 @@ tags:
   - topic/postgresql
   - topic/search
   - type/note
-publish: false
+publish: true
 ---
 to_tsvector을 이용해서 텍스트를 벡터로 만들어놓고, 나중에 검색할때 사용.
 rds에서는 to_tsvector(’simple’) 이 먹는데 로컬 postgres app에서는 안먹는 문제 발생(mac)

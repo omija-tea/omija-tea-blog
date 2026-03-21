@@ -6,7 +6,7 @@ tags:
   - topic/python
   - topic/openai
   - type/note
-publish: false
+publish: true
 ---
 ### fastapi swagger 접근제한
 ```python

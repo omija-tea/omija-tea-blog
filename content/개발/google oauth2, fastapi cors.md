@@ -6,7 +6,7 @@ tags:
   - topic/fastapi
   - topic/cors
   - type/note
-publish: false
+publish: true
 ---
 ### google oauth2 with fastapi
 ```python

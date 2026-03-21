@@ -5,7 +5,7 @@ tags:
   - topic/aws
   - topic/python
   - type/note
-publish: false
+publish: true
 ---
 ```bash
 # rye 설치. 하라는대로 하면 됨

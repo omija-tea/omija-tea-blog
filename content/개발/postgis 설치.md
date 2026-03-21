@@ -5,7 +5,7 @@ tags:
   - topic/postgresql
   - topic/database
   - type/note
-publish: false
+publish: true
 ---
 ### mac
 > brew install postgis로 설치

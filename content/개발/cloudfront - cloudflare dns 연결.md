@@ -6,7 +6,7 @@ tags:
   - topic/cloudflare
   - topic/infra
   - type/note
-publish: false
+publish: true
 ---
 1. cloudflare에서 도메인 발급
 2. cloudflare SSL/TLS를 Full(strict)로 변경

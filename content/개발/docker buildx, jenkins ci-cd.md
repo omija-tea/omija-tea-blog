@@ -6,7 +6,7 @@ tags:
   - topic/jenkins
   - topic/cicd
   - type/note
-publish: false
+publish: true
 ---
 buildx 구축 시작
 ```docker

@@ -5,7 +5,7 @@ tags:
   - topic/python
   - topic/sqlalchemy
   - type/note
-publish: false
+publish: true
 ---
 맥에서 설치할때 오류 발생함. 디렉토리 못찾아서 발생하는 문제
 ```python

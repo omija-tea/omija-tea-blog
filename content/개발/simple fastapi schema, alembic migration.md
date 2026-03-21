@@ -6,7 +6,7 @@ tags:
   - topic/pydantic
   - topic/alembic
   - type/note
-publish: false
+publish: true
 ---
 ```python
 from pydantic import BaseModel, ConfigDict

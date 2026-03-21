@@ -5,7 +5,7 @@ tags:
   - topic/aws
   - topic/database
   - type/log
-publish: false
+publish: true
 ---
 RDS가 다운되었다.
 ![[IMG-20260321222415566.png]]

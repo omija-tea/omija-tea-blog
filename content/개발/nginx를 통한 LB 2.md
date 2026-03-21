@@ -5,7 +5,7 @@ tags:
   - topic/nginx
   - topic/infra
   - type/note
-publish: false
+publish: true
 ---
 ```nginx
 events {

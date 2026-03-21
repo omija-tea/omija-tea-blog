@@ -5,7 +5,7 @@ tags:
   - topic/python
   - topic/docker
   - type/note
-publish: false
+publish: true
 ---
 rye를 쓰자
 

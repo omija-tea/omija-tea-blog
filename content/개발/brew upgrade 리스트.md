@@ -4,7 +4,7 @@ date: 2025-07-06T21:18:00
 tags:
   - topic/macos
   - type/note
-publish: false
+publish: true
 ---
 ```bash
 brew outdated --greedy

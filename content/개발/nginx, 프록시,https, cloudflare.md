@@ -6,7 +6,7 @@ tags:
   - topic/cloudflare
   - topic/https
   - type/note
-publish: false
+publish: true
 ---
 # vim 기본 설정
 ```bash

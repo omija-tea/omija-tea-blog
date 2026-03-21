@@ -4,7 +4,7 @@ date: 2025-05-13 21:50
 tags:
   - topic/python
   - type/note
-publish: false
+publish: true
 ---
 ```python
     @overload

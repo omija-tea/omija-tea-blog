@@ -5,7 +5,7 @@ tags:
   - topic/aws
   - topic/infra
   - type/log
-publish: false
+publish: true
 ---
 서버에 버그가 나서 빨리 들어가서 확인해야하는데 aws security group에 문제가 발생함
 ![[IMG-20260321223745036.png]]

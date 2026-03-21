@@ -5,7 +5,7 @@ tags:
   - topic/database
   - topic/vscode
   - type/note
-publish: false
+publish: true
 ---
 1. VSCode에서 SQLTools 설치
 2. 사용하는 DB에 맞는 추가 extension 설치

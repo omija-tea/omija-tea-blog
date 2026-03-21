@@ -5,7 +5,7 @@ tags:
   - topic/AI
   - topic/developer-tools
   - type/idea
-publish: false
+publish: true
 ---
 
 

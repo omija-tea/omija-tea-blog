@@ -6,7 +6,7 @@ tags:
   - topic/cicd
   - topic/nginx
   - type/note
-publish: false
+publish: true
 ---
 ### volume
 docker compose의 볼륨 기능을 이용해서 나중에 nginx.conf 편하게 바꿀 수 있도록 마운트 함

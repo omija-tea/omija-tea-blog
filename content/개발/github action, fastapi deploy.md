@@ -6,7 +6,7 @@ tags:
   - topic/docker
   - topic/cicd
   - type/note
-publish: false
+publish: true
 ---
 ```docker
 FROM 3.10.13

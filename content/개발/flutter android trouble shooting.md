@@ -5,7 +5,7 @@ tags:
   - topic/flutter
   - topic/android
   - type/note
-publish: false
+publish: true
 ---
 ## ./gradlew clean 실패 문제
 ```dart

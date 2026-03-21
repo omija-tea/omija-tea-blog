@@ -6,7 +6,7 @@ tags:
   - topic/python
   - topic/async
   - type/note
-publish: false
+publish: true
 ---
 ## async 엔드포인트, 싱글톤 서비스, async 함수 호출
 ![[IMG-20260321223522221.png]]

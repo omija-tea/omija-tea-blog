@@ -5,7 +5,7 @@ tags:
   - topic/flutter
   - topic/ios
   - type/note
-publish: false
+publish: true
 ---
 1. 맥북과 아이폰 연결
 2. 맥북 시스템 설정에서 sharing검색

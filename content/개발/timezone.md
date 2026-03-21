@@ -5,7 +5,7 @@ tags:
   - topic/postgresql
   - topic/database
   - type/note
-publish: false
+publish: true
 ---
 postgresql 에서 아래 명령어 실행해보자
 ```bash

@@ -6,7 +6,7 @@ tags:
   - topic/alembic
   - topic/docker
   - type/note
-publish: false
+publish: true
 ---
 default : sqlalchemy 단에서 default값을 관리해줌
 server_default : db 단에서 default 값을 관리해줌.

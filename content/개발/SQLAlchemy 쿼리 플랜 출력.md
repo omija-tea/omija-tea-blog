@@ -5,7 +5,7 @@ tags:
   - topic/sqlalchemy
   - topic/postgresql
   - type/note
-publish: false
+publish: true
 ---
 ```python
 # ! 디버그용 쿼리 플랜 출력 코드

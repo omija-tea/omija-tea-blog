@@ -5,7 +5,7 @@ tags:
   - topic/java
   - topic/intellij
   - type/note
-publish: false
+publish: true
 ---
 Setting → Tools → AutoCp → Languages → java
 Build Command : javac -encoding UTF-8 @in -d @dir

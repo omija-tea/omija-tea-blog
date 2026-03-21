@@ -4,7 +4,7 @@ date: 2024-04-16 20:23
 tags:
   - topic/aws
   - type/note
-publish: false
+publish: true
 ---
 원드라이브 한글로 나오는 문제 해결 방법 :
 실행 → regedit → 

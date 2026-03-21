@@ -5,7 +5,7 @@ tags:
   - topic/architecture
   - topic/sqlalchemy
   - type/note
-publish: false
+publish: true
 ---
 현재는 도메인 중심으로 repository를 설계하고 있음.
 ```python

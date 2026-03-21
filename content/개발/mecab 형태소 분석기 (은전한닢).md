@@ -5,7 +5,7 @@ tags:
   - topic/python
   - topic/NLP
   - type/note
-publish: false
+publish: true
 ---
 # mecab-ko 다운로드 및 설치 (mac 기준)
 ```bash

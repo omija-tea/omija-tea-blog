@@ -6,7 +6,7 @@ tags:
   - topic/lambda
   - topic/python
   - type/note
-publish: false
+publish: true
 ---
 ```python
 import pyvips
