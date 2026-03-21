@@ -18,8 +18,8 @@ publish: false
 ```python
 http {
     upstream backend {
-        server 172.31.10.122;
-        server 172.31.4.226;
+        server 10.0.0.1;
+        server 10.0.0.2;
     }
 
     server {

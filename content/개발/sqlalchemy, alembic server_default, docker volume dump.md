@@ -33,4 +33,4 @@ alembic에서 default로 할때 기존에 존재하던 row들에 대해서 값�
 
 ```
 ## postgresql 볼륨 restore
-docker exec -i postgres pg_restore -U postgres -d osiq /dump.sql
+docker exec -i postgres pg_restore -U postgres -d mydb /dump.sql

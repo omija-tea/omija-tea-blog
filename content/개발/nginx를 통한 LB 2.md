@@ -10,19 +10,19 @@ events {
 }
 http {
     upstream backend {
-        server 172.31.6.164;
-        server 172.31.4.197;
-        server 172.31.7.2;
-        server 172.31.10.45;
-        server 172.31.5.153;
+        server 10.0.0.1;
+        server 10.0.0.2;
+        server 10.0.0.3;
+        server 10.0.0.4;
+        server 10.0.0.5;
     }
 
     upstream naver_backend {
-        server 172.31.6.164 max_fails=2 fail_timeout=300s;
-        server 172.31.4.197 max_fails=2 fail_timeout=300s;
-        server 172.31.7.2 max_fails=2 fail_timeout=300s;
-        server 172.31.10.45 max_fails=2 fail_timeout=300s;
-        server 172.31.5.153 max_fails=2 fail_timeout=300s;
+        server 10.0.0.1 max_fails=2 fail_timeout=300s;
+        server 10.0.0.2 max_fails=2 fail_timeout=300s;
+        server 10.0.0.3 max_fails=2 fail_timeout=300s;
+        server 10.0.0.4 max_fails=2 fail_timeout=300s;
+        server 10.0.0.5 max_fails=2 fail_timeout=300s;
     }
 
     server {

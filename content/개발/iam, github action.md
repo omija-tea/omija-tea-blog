@@ -9,7 +9,7 @@ iam을 이용하여 여러 명의 admin 계정을 만들었음. 루트 계정 �
 # github actions
 깃허브 태그를 이용해서 ECR에 푸쉬하고 싶다는 생각이 들었다. `git tag v0.0.10` 이런 식으로 해서 태그를 달고 github action에서 인식하게 해보자
 ```yaml
-name: ohmeet-server-github-actions
+name: my-server-github-actions
 
 on:
   push:

@@ -13,7 +13,7 @@ jenkins관리의 system을 들어가니까 홈 디렉토리(var/lib/jenkins)가 
 내 깃헙에 sh_test레포지토리 만들고 test.sh(echo hello) 파일을 넣어뒀다.
 위에처럼 설정하고 아래 execute shell에서 sh test.sh하니까 동작 성공
 
-본격적인 테스트 시작. ronnya git으로 땡겨오고 docker compose up 명령어 수행시키도록 만들었는데 jenkins가 docker 그룹에 속하지 않아서 
+본격적인 테스트 시작. 프로젝트 git으로 땡겨오고 docker compose up 명령어 수행시키도록 만들었는데 jenkins가 docker 그룹에 속하지 않아서
 ```shell
 sudo usermod -a -G docker jenkins
 newgrp docker

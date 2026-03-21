@@ -4,7 +4,7 @@ date: 2024-03-04 19:25
 tags: []
 publish: false
 ---
-ronnya buildx 구축 시작
+buildx 구축 시작
 ```docker
 FROM python:3.12.0-slim-bullseye
 
@@ -32,7 +32,7 @@ RUN pip install -r requirements.txt
 CMD ["python", "router.py"]
 ```
 이걸로 성공. 
-docker build -t playjnj/ronnya_router-armv7:1.0.2 —platform linux/arm/v7 해서 빌드 성공
+docker build -t my-image/router-armv7:1.0.2 —platform linux/arm/v7 해서 빌드 성공
 파이썬에서 zmq설치하면 파이썬 zmq로 하는거같은데 arm에서는 그게 안되는거같다.
 그래서 libzmq3 따로 설치해주고 했음. libzmq3는 4에 비해 오래된거같은데 그냥 사용
 docker buildx create —name armbuilder —driver docker-container 하고
@@ -58,7 +58,7 @@ git checkout -b task/proto_combine
 proto file import 관련해서 절대경로로 import 하도록 바꿈
 ```python
 if __name__ != "__main__":
-    sys.path.append(os.path.dirname(os.path.dirname(os.path.absos.path(__file__))))
+    sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     from etc import message_util
 ```
 zmq 테스트 수행. 실제 왔다갔다할 데이터 프레임만 protobuf로 serialize해서 보내기로했다.

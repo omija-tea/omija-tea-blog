@@ -10,13 +10,13 @@ events {
 }
 http {
     upstream backend {
-        server 10.0.3.192;
-        server 10.0.8.122;
+        server 10.0.0.1;
+        server 10.0.0.2;
     }
 
     upstream naver_backend {
-        server 10.0.3.192 max_fails=2 fail_timeout=300s;
-        server 10.0.8.122 max_fails=2 fail_timeout=300s;
+        server 10.0.0.1 max_fails=2 fail_timeout=300s;
+        server 10.0.0.2 max_fails=2 fail_timeout=300s;
     }
 
     server {
