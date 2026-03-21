@@ -18,7 +18,7 @@ omija-tea <playjnj@khu.ac.kr> <playjnj123@gmail.com>
 6. git push --force origin main
 7. git push —force origin beta …
 
-![[image 4.png]]
+![[IMG-20260321223220858.png]]
 사라진 커밋 복구 완료
 
 ### alter table postgresql using 문제

@@ -16,8 +16,8 @@ oauth가 뭘까? 제 3자로부터 받아온 인증정보를 이용하는것이�
 
 ## 발생했던 문제
 6. 환경변수
-    - 이 씹색기… 자꾸 .venv 자체에 박혀버려서 헷갈리게 했음
-    - load_dotenv(override=True)를 해서 아예 엎어버리든 .venv 관리를 잘하든 하자
+    - 이녀석때문에.... .venv 자체에 박혀버려서 헷갈리게 했음
+    - load_dotenv(override=True)를 해서 아예 엎어버리든 .venv 관리를 잘하자
 7. 구글 
     - 테스트하기위한 authorization code가 필요했는데 이거 [https://developers.google.com/oauthplayground/](https://developers.google.com/oauthplayground/) 여기서 제공한다.
     - 다만 이걸 사용하기 위해서는 나만의 client_id, client_secret이 필요하다. 톱니바퀴 누르고 그거 입력하면 구글이 프론트 역할을 대신 해준다.
@@ -27,5 +27,5 @@ oauth가 뭘까? 제 3자로부터 받아온 인증정보를 이용하는것이�
 
 
 ## fast api
-파일 여러개로 쪼개는거 배움. 쉽다.
+파일 여러개로 쪼개는거 해봤는데 쉽다.
 이제 우리 서비스 자체 oauth를 구현해야하는데… 진짜 막막하다. 해봐야지 뭐

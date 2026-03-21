@@ -7,7 +7,7 @@ publish: false
 1. 맥북과 아이폰 연결
 2. 맥북 시스템 설정에서 sharing검색
 
-![[image 14.png]]
+![[IMG-20260321223304041.png]]
 3. local hostname:port 으로 flutter 환경변수 변경
 4. 서버 host 0.0.0.0으로 실행
 5. 연결됨
