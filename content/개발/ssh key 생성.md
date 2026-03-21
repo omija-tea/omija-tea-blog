@@ -1,6 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
+title: "ssh key 생성"
+date: 
+tags: []
+publish: false
 ---
 ```bash
 ssh-keygen -t ed25519 -C "playjnj@khu.ac.kr"

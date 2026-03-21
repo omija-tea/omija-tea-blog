@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-12-22
+title: "cloudfront - cloudflare dns 연결"
+date: 2024-12-22
+tags: []
+publish: false
 ---
 1. cloudflare에서 도메인 발급
 2. cloudflare SSL/TLS를 Full(strict)로 변경

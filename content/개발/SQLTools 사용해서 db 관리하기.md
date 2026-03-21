@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2025-03-19
+title: "SQLTools 사용해서 db 관리하기"
+date: 2025-03-19
+tags: []
+publish: false
 ---
 1. VSCode에서 SQLTools 설치
 2. 사용하는 DB에 맞는 추가 extension 설치

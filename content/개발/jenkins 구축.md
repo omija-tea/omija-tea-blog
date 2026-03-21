@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-03-04
+title: "jenkins 구축"
+date: 2024-03-04
+tags: []
+publish: false
 ---
 jenkins를 공부하고있다.
 jenkins에서 sh 명령어같은걸 수행하면 누가 수행시켜주나 확인해봤는데, 내 raspberry pi 운영체제에 jenkins라는 이름의 사용자가 추가되고 그 사용자가 명령어를 수행시키는 방식인것 같다.

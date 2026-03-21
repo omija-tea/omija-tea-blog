@@ -1,6 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
+title: "brew upgrade 리스트"
+date: 
+tags: []
+publish: false
 ---
 ```bash
 brew outdated --greedy

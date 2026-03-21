@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-03-05
+title: "hyperv dism문제, oh-my-posh, onenote"
+date: 2024-03-05
+tags: []
+publish: false
 ---
 hyperv 문제 해결하려다 보니까 cmd에서 dism이랑 dfc인가 그거 해야되는데 cmd가 안켜지는 문제 발생. 잠깐 켜졌다가 바로 꺼지더라. 그걸 해결하려면 cmd를 켜야되는 무한반복 상황 발생
 그래서 윈도우 포맷했다.

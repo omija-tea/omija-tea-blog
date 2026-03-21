@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2025-01-09
+title: "발생했던 문제"
+date: 2025-01-09
+tags: []
+publish: false
 ---
 최상위 conftest.py
 ```python

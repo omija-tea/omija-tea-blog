@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2025-02-13
+title: "flutter android trouble shooting"
+date: 2025-02-13
+tags: []
+publish: false
 ---
 ## ./gradlew clean 실패 문제
 ```dart

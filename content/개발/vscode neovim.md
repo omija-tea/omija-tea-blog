@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-05-28
+title: "vscode neovim"
+date: 2024-05-28
+tags: []
+publish: false
 ---
 ### vscode neovim visual 모드에서 copilot inline chat이 안 되는 문제
 ```json

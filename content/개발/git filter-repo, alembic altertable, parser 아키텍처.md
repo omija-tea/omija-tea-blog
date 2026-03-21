@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-09-29
+title: "git filter-repo, alembic altertable, parser 아키텍처"
+date: 2024-09-29
+tags: []
+publish: false
 ---
 작성자를 잘못 작성하고 있었다. gh auth등을 통해 권한을 가져오는건 맞는데, 실제로 깃허브에 푸시가 올라가는 유저의 정보는 git config를 통해서 깃허브가 유추하는것. 근데 playjnj@khu.ac.kr이 아닌 playjnj123@gmail.com으로 config가 설정되어 있어 모든 커밋이 이상한 유저에게 가고있엇음
 ## 해결방법

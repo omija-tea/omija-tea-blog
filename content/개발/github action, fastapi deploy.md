@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-06-05
+title: "github action, fastapi deploy"
+date: 2024-06-05
+tags: []
+publish: false
 ---
 ```docker
 FROM 3.10.13

@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-06-11
+title: "simple file upload for fastapi"
+date: 2024-06-11
+tags: []
+publish: false
 ---
 ```python
 @router.post("/uploadfile", summary="Upload File")

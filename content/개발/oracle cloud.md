@@ -1,6 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
+title: "oracle cloud"
+date: 
+tags: []
+publish: false
 ---
 회원가입하고 인스턴스 만들면 된다.
 oracle linux 쓰레기같으니까 쓰지 말자. dnf가 너무 쓰레기같다.

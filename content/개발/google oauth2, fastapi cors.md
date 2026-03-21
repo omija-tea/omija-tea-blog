@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-06-08
+title: "google oauth2, fastapi cors"
+date: 2024-06-08
+tags: []
+publish: false
 ---
 ### google oauth2 with fastapi
 ```python

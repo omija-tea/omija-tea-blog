@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-08-02
+title: "postgis 설치"
+date: 2024-08-02
+tags: []
+publish: false
 ---
 ### mac
 > brew install postgis로 설치

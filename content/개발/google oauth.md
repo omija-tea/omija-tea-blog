@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-06-08
+title: "google oauth"
+date: 2024-06-08
+tags: []
+publish: false
 ---
 oauth가 뭘까? 제 3자로부터 받아온 인증정보를 이용하는것이다.
 [이 글이 많이 도움 됐던 것 같다](https://blog.naver.com/shino1025/222226707146) 

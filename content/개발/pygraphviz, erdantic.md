@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2025-01-05
+title: "pygraphviz, erdantic"
+date: 2025-01-05
+tags: []
+publish: false
 ---
 맥에서 설치할때 오류 발생함. 디렉토리 못찾아서 발생하는 문제
 ```python

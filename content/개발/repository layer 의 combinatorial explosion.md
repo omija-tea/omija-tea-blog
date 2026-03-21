@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2025-06-05
+title: "쿼리 스펙을 객체로 표현"
+date: 2025-06-05
+tags: []
+publish: false
 ---
 현재는 도메인 중심으로 repository를 설계하고 있음.
 ```python

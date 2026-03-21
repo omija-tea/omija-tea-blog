@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-06-10
+title: "fastapi schema for fastapi"
+date: 2024-06-10
+tags: []
+publish: false
 ---
 ```python
 from pydantic import BaseModel, Field

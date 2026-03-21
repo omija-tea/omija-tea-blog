@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2025-02-26
+title: "flutter 아이폰으로 맥북 localhost 들어가기"
+date: 2025-02-26
+tags: []
+publish: false
 ---
 1. 맥북과 아이폰 연결
 2. 맥북 시스템 설정에서 sharing검색

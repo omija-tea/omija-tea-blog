@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-10-19
+title: "nginx를 통한 load balancing with public ip"
+date: 2024-10-19
+tags: []
+publish: false
 ---
 ## 요구사항
 1. 각자의 public IP를 가진 여러개의 ec2 instance. 각각의 instance는 외부에 crawling을 수행할 예정

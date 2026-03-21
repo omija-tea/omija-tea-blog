@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-07-30
+title: "sqlalchemy mixin, config"
+date: 2024-07-30
+tags: []
+publish: false
 ---
 ```python
 from datetime import datetime

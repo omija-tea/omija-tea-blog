@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2026-01-22
+title: "자바 static과 클래스 로딩 관련 코드 분석"
+date: 2026-01-22
+tags: []
+publish: false
 ---
 ```java
 public class Test {

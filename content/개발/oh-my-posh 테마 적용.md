@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-04-10
+title: "oh-my-posh 테마 적용"
+date: 2024-04-10
+tags: []
+publish: false
 ---
 oh my posh 테마 적용 방법
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine

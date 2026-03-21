@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2025-05-21
+title: "postgresql database간 데이터 연산"
+date: 2025-05-21
+tags: []
+publish: false
 ---
 RDS 에서 production, test 두개의 database가 굴러가고 있다.
 production 에 있는 데이터를 test로 옮기되, 그대로 dump 하는게 아니라 복잡한 조건을 거친 후 조건에 맞는 애들만 update 해줘야 하는 상황 발생.

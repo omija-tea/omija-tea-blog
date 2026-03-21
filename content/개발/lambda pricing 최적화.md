@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-12-20
+title: "lambda pricing 최적화"
+date: 2024-12-20
+tags: []
+publish: false
 ---
 환율 : 1446
 512:

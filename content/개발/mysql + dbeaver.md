@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-04-15
+title: "mysql + dbeaver"
+date: 2024-04-15
+tags: []
+publish: false
 ---
 mysql 설치해서 root로 로그인. 쿼리 실행시키고 dbeaver 새로고
 ![[Untitled 17.png]]

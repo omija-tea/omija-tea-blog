@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-03-04
+title: "docker buildx, jenkins ci-cd"
+date: 2024-03-04
+tags: []
+publish: false
 ---
 ronnya buildx 구축 시작
 ```docker

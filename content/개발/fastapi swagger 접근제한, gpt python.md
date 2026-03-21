@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-08-03
+title: "fastapi swagger 접근제한, gpt python"
+date: 2024-08-03
+tags: []
+publish: false
 ---
 ### fastapi swagger 접근제한
 ```python

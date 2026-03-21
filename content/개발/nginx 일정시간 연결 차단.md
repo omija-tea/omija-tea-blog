@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2025-03-24
+title: "nginx 일정시간 연결 차단"
+date: 2025-03-24
+tags: []
+publish: false
 ---
 ```bash
 events {

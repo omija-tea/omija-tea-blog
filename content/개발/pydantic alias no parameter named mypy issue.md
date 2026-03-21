@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2025-05-19
+title: "이거 오류 발생함. mypy 단에서 제대로 잡지를 못해서 no parameter named 발생(동작은 정상적으로 됨)"
+date: 2025-05-19
+tags: []
+publish: false
 ---
 [Present Field Name Rather Than Alias When Using Intellisense · Issue #5893 · pydantic/pydantic](https://github.com/pydantic/pydantic/issues/5893#issuecomment-2512807073)
 

@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2025-01-17
+title: "mecab-ko 다운로드 및 설치 (mac 기준)"
+date: 2025-01-17
+tags: []
+publish: false
 ---
 # mecab-ko 다운로드 및 설치 (mac 기준)
 ```bash

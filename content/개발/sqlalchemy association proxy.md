@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-08-04
+title: "sqlalchemy association proxy"
+date: 2024-08-04
+tags: []
+publish: false
 ---
 유저와 post가 다대다 관계인데, 유저가 먼저 생성되고 post가 추가되는 방식이라고 생각하자.
 ```python

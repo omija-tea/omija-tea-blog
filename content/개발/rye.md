@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-06-05
+title: "rye"
+date: 2024-06-05
+tags: []
+publish: false
 ---
 rye를 쓰자
 

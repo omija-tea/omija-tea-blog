@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2025-04-21
+title: "timezone"
+date: 2025-04-21
+tags: []
+publish: false
 ---
 postgresql 에서 아래 명령어 실행해보자
 ```bash

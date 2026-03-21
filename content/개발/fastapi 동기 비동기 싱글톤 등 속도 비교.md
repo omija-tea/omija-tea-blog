@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2025-04-09
+title: "fastapi 동기 비동기 싱글톤 등 속도 비교"
+date: 2025-04-09
+tags: []
+publish: false
 ---
 ## async 엔드포인트, 싱글톤 서비스, async 함수 호출
 ![[image 19.png]]

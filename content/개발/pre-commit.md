@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-07-29
+title: "pre-commit"
+date: 2024-07-29
+tags: []
+publish: false
 ---
 rye tools install pre-commit
 pre-commit install

@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-06-17
+title: "github action deploy"
+date: 2024-06-17
+tags: []
+publish: false
 ---
 ### volume
 docker compose의 볼륨 기능을 이용해서 나중에 nginx.conf 편하게 바꿀 수 있도록 마운트 함

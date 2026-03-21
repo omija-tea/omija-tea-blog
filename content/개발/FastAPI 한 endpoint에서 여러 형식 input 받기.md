@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2025-05-09
+title: "FastAPI 한 endpoint에서 여러 형식 input 받기"
+date: 2025-05-09
+tags: []
+publish: false
 ---
 ```python
 

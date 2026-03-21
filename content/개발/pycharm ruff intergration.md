@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2025-09-27
+title: "pycharm ruff intergration"
+date: 2025-09-27
+tags: []
+publish: false
 ---
 ruff pycharm 지원이 좀 구리다는 생각이 든다.
 ruff-lsp는 deprecate 되었기에 ruff server를 사용해야함. 다행히 pycharm-ruff-plugin이 이걸 지원

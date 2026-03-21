@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-03-06
+title: "proto및 컨테이너화"
+date: 2024-03-06
+tags: []
+publish: false
 ---
 worker, router등의 proto화 시작
 etc폴더를 밖에 두고 했는데.. 엄청 멍청했다. worker router client가 각각 컨테이너라는 사실을 까먹음..

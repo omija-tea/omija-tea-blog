@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2025-02-11
+title: "vpc attached lambda의 s3 접근"
+date: 2025-02-11
+tags: []
+publish: false
 ---
 람다가 vpc private에서 돌아가도록 설정하면 s3에 접근 불가능함.
 ## 해결방법

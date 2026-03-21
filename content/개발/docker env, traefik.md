@@ -1,6 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
+title: "docker env, traefik"
+date: 
+tags: []
+publish: false
 ---
 ## 환경변수
 루트에 config 폴더를 따로 만들고 load_dotenv(dotenv_path=”./config/.env”) 로 로딩함

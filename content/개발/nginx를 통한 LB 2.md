@@ -1,6 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
+title: "nginx를 통한 LB 2"
+date: 
+tags: []
+publish: false
 ---
 ```python
 events {

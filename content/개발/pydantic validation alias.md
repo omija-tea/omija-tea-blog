@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2025-06-26
+title: "pydantic validation alias"
+date: 2025-06-26
+tags: []
+publish: false
 ---
 ```python
 class ResponseCollection(BaseModel):

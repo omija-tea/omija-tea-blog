@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-12-18
+title: "lambda 이미지 포맷 변경 및 리사이징"
+date: 2024-12-18
+tags: []
+publish: false
 ---
 ```python
 import pyvips

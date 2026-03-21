@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-06-15
+title: "vim 기본 설정"
+date: 2024-06-15
+tags: []
+publish: false
 ---
 # vim 기본 설정
 ```bash

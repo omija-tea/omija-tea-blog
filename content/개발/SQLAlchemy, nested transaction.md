@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2025-01-06
+title: "Nested Transaction in SQLAlchemy"
+date: 2025-01-06
+tags: []
+publish: false
 ---
 # Nested Transaction in SQLAlchemy
 ```python

@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-10-17
+title: "도커 컨테이너 접속"
+date: 2024-10-17
+tags: []
+publish: false
 ---
 alembic + sqlalchemy + postgresql 검색 만들기
 

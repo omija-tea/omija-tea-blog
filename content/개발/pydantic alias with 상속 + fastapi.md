@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2025-05-19
+title: "pydantic alias with 상속 + fastapi"
+date: 2025-05-19
+tags: []
+publish: false
 ---
 ```python
 class MyModel(BaseModel):

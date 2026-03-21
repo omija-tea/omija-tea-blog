@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2025-01-01
+title: "sqlalchemy hybrid_property, column_property"
+date: 2025-01-01
+tags: []
+publish: false
 ---
 모든 post 객체에 대해서 DB에는 저장하지 않되 항상 계산해야하는 field가 있다.
 우리프로젝트의 경우에는 user_link_count가 이에 해당함.

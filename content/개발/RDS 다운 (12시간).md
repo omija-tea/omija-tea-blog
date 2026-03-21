@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2025-01-24
+title: "RDS 다운 (12시간)"
+date: 2025-01-24
+tags: []
+publish: false
 ---
 RDS가 다운되었다.
 ![[image 13.png]]

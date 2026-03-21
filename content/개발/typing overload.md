@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2025-05-13
+title: "typing overload"
+date: 2025-05-13
+tags: []
+publish: false
 ---
 ```python
     @overload

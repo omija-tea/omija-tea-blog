@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-06-14
+title: "github actions"
+date: 2024-06-14
+tags: []
+publish: false
 ---
 iam을 이용하여 주형, 용욱, 나 세명의 admin 계정을 만들었음. 루트 계정 쓰다가 비밀번호 실수로 틀리면 etechcloud.net으로 인증코드 날아가는거 그거 일일이 사무국분한테 부탁드릴순 없으니까…
 

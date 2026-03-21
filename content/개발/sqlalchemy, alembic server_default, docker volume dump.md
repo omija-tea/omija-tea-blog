@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-09-04
+title: "sqlalchemy, alembic server_default, docker volume dump"
+date: 2024-09-04
+tags: []
+publish: false
 ---
 default : sqlalchemy 단에서 default값을 관리해줌
 server_default : db 단에서 default 값을 관리해줌.

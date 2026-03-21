@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-08-28
+title: "pytest+fastapi, contextvar, session 버그"
+date: 2024-08-28
+tags: []
+publish: false
 ---
 pytest에서 dependency injection 관련 depends mocking이 안되는 문제 발생
 이거 fastapi app 단에서 depends를 resolve 해주는거라 내가 따로 unittest를 작성하면 depends가 제대로 작동을 안한다.

@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2025-02-18
+title: "cloudflared 설치"
+date: 2025-02-18
+tags: []
+publish: false
 ---
 cloudflare tunnel을 사용하면 ip를 숨길수 있다길래 한번 시도해보자
 

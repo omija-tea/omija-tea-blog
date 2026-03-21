@@ -1,6 +1,7 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-10-09
+title: "docker layer caching + ecr + github action"
+date: 2024-10-09
+tags: []
+publish: false
 ---
 ![[image 5.png]]

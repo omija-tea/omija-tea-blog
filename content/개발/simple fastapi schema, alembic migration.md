@@ -1,7 +1,8 @@
 ---
-base: "[[IMG-20260321214755797.base]]"
-태그: []
-날짜: 2024-08-01
+title: "simple fastapi schema, alembic migration"
+date: 2024-08-01
+tags: []
+publish: false
 ---
 ```python
 from pydantic import BaseModel, ConfigDict
