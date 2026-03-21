@@ -1,6 +1,6 @@
 ---
-title: "ssh key 생성"
-date: 
+title: ssh key 생성
+date: 2025-09-25T11:15:00
 tags:
   - topic/infra
   - topic/network

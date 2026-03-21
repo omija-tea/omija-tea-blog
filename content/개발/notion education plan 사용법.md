@@ -1,6 +1,6 @@
 ---
-title: "notion education plan 사용법"
-date: 
+title: notion education plan 사용법
+date: 2025-11-20T10:30:00
 tags:
   - topic/productivity
   - type/note

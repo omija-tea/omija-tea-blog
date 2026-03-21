@@ -1,13 +1,13 @@
 ---
-title: "nginx를 통한 LB 2"
-date: 
+title: nginx를 통한 LB 2
+date: 2025-03-10T11:30:00
 tags:
   - topic/nginx
   - topic/infra
   - type/note
 publish: false
 ---
-```python
+```nginx
 events {
     worker_connections 1024;
 }
