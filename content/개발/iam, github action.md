@@ -4,7 +4,7 @@ date: 2024-06-14 20:05
 tags: []
 publish: false
 ---
-iam을 이용하여 주형, 용욱, 나 세명의 admin 계정을 만들었음. 루트 계정 쓰다가 비밀번호 실수로 틀리면 etechcloud.net으로 인증코드 날아가는거 그거 일일이 사무국분한테 부탁드릴순 없으니까…
+iam을 이용하여 여러 명의 admin 계정을 만들었음. 루트 계정 쓰다가 비밀번호 실수로 틀리면 example.com으로 인증코드 날아가는거 그거 일일이 관리해줄순 없으니까…
 
 # github actions
 깃허브 태그를 이용해서 ECR에 푸쉬하고 싶다는 생각이 들었다. `git tag v0.0.10` 이런 식으로 해서 태그를 달고 github action에서 인식하게 해보자
@@ -101,7 +101,7 @@ aws ec2 describe-iam-instance-profile-associations
 이걸로 정책 붙은거 확인
 이제 EC2 들어가서
 ```python
-aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 730335593196.dkr.ecr.ap-northeast-2.amazonaws.com
+aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 123456789012.dkr.ecr.ap-northeast-2.amazonaws.com
 ```
 하면 docker를 ECR에 인증할 수 있다. IAM Role 없으면 aws configure로 직접 로그인 해야됨
 # https

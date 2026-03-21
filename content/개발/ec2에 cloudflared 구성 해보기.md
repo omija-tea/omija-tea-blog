@@ -37,7 +37,7 @@ tunnel: [TUNNEL_ID]
 credentials-file: /root/.cloudflared/[TUNNEL_ID].json
 
 ingress:
-  - hostname: api.myapp.com # cloudflare에서 연결할 domain
+  - hostname: api.example.com # cloudflare에서 연결할 domain
     service: http://localhost:8080  # 백엔드 서버 포트에 맞게 수정
   - service: http_status:404
 
@@ -48,7 +48,7 @@ originRequest:
 ```
 ```bash
 sudo chmod 644 ./config.yml
-cloudflared tunnel route dns ${TUNNEL_ID} api.myapp.com
+cloudflared tunnel route dns ${TUNNEL_ID} api.example.com
 sudo cloudflared service install
 sudo systemctl start cloudflared
 sudo systemctl enable cloudflared
