@@ -47,7 +47,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.TableOfContents()),
   ],
   left: [
-    Component.ProfileImage(),
+    Component.DesktopOnly(Component.ProfileImage()),
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
@@ -100,12 +100,14 @@ export const defaultContentPageLayout: PageLayout = {
     ),
   ],
   right: [
-    Component.Graph({
+    Component.DesktopOnly(Component.Graph({
       localGraph: { depth: 2, showTags: true }
-    }),
+    })),
+    Component.MobileOnly(Component.Graph({
+      localGraph: { depth: 1, showTags: true }
+    })),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
-    // ★ 최근 작성한 글
     Component.DesktopOnly(
       Component.RecentNotes({
         title: "최근 작성한 글",
@@ -137,7 +139,7 @@ export const defaultListPageLayout: PageLayout = {
     }),
   ],
   left: [
-    Component.ProfileImage(),
+    Component.DesktopOnly(Component.ProfileImage()),
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
