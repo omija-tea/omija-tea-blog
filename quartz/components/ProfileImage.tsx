@@ -1,9 +1,9 @@
-import { QuartzComponentConstructor } from "./types"
+import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 export default (() => {
-    function ProfileImage() {
+    function ProfileImage({ displayClass }: QuartzComponentProps) {
         return (
-            <div class="profile-image-container">
+            <div class={`profile-image-container ${displayClass ?? ""}`}>
                 <img
                     src="/static/profile.png"
                     alt="프로필 사진"
