@@ -130,8 +130,8 @@ select * from pg_available_extensions
 ```
 여기에 pg_bigm이 뜰것
 
-![[image 7.png]]
-![[image 8.png]]
+![[IMG-20260422171157319.png]]
+![[IMG-20260422171157650.png]]
 
 ## sqlalchemy에서 explain 하기
 ```python
