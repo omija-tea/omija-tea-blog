@@ -6,6 +6,8 @@ tags:
   - topic/fastapi
   - type/note
 publish: true
+date created: 2026-03-21T23:07
+date modified: 2026-04-22T16:17
 ---
 oauth가 뭘까? 제 3자로부터 받아온 인증정보를 이용하는것이다.
 [이 글이 많이 도움 됐던 것 같다](https://blog.naver.com/shino1025/222226707146) 

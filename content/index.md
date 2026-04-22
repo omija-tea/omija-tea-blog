@@ -54,6 +54,8 @@ tags:
   - type/note
   - type/log
   - type/idea
+date created: 2026-03-22T00:58
+date modified: 2026-04-22T16:17
 ---
 
 기술과 개발에 대한 이야기를 기록합니다.

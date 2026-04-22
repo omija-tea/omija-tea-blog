@@ -6,6 +6,8 @@ tags:
   - topic/docker
   - type/note
 publish: true
+date created: 2026-03-21T23:07
+date modified: 2026-04-22T16:17
 ---
 worker, router등의 proto화 시작
 etc폴더를 밖에 두고 했는데.. 엄청 멍청했다. worker router client가 각각 컨테이너라는 사실을 까먹음..

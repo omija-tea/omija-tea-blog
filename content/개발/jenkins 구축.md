@@ -7,6 +7,8 @@ tags:
   - topic/raspberrypi
   - type/note
 publish: true
+date created: 2026-03-21T23:07
+date modified: 2026-04-22T16:17
 ---
 jenkins를 공부하고있다.
 jenkins에서 sh 명령어같은걸 수행하면 누가 수행시켜주나 확인해봤는데, 내 raspberry pi 운영체제에 jenkins라는 이름의 사용자가 추가되고 그 사용자가 명령어를 수행시키는 방식인것 같다.
