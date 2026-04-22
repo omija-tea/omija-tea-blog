@@ -7,6 +7,8 @@ tags:
   - topic/nginx
   - type/note
 publish: true
+date created: 2026-03-21T23:46
+date modified: 2026-04-22T16:17
 ---
 ### volume
 docker compose의 볼륨 기능을 이용해서 나중에 nginx.conf 편하게 바꿀 수 있도록 마운트 함

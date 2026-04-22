@@ -6,6 +6,8 @@ tags:
   - topic/sqlalchemy
   - type/note
 publish: true
+date created: 2026-03-21T23:07
+date modified: 2026-04-22T16:17
 ---
 맥에서 설치할때 오류 발생함. 디렉토리 못찾아서 발생하는 문제
 ```python

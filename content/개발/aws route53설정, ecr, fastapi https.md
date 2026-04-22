@@ -7,6 +7,8 @@ tags:
   - topic/infra
   - type/note
 publish: true
+date created: 2026-03-21T23:07
+date modified: 2026-04-22T16:17
 ---
 1. 간단하게 퍼블릭 하나 올리고 8000번 포트 인바운드로 잡아놨음
 2. ec2에 fastapi 예제 올려놓음

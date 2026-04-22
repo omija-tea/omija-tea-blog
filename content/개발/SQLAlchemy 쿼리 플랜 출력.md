@@ -6,6 +6,8 @@ tags:
   - topic/postgresql
   - type/note
 publish: true
+date created: 2026-03-21T23:45
+date modified: 2026-04-22T16:17
 ---
 ```python
 # ! 디버그용 쿼리 플랜 출력 코드

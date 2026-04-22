@@ -7,6 +7,8 @@ tags:
   - topic/https
   - type/note
 publish: true
+date created: 2026-03-21T23:46
+date modified: 2026-04-22T16:17
 ---
 # vim 기본 설정
 ```bash

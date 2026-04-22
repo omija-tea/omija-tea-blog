@@ -6,6 +6,8 @@ tags:
   - topic/ios
   - type/note
 publish: true
+date created: 2026-03-21T23:14
+date modified: 2026-04-22T16:17
 ---
 1. 맥북과 아이폰 연결
 2. 맥북 시스템 설정에서 sharing검색

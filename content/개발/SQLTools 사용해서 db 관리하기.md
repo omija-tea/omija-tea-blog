@@ -6,6 +6,8 @@ tags:
   - topic/vscode
   - type/note
 publish: true
+date created: 2026-03-21T23:07
+date modified: 2026-04-22T16:17
 ---
 1. VSCode에서 SQLTools 설치
 2. 사용하는 DB에 맞는 추가 extension 설치

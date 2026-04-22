@@ -6,6 +6,8 @@ tags:
   - topic/postgresql
   - type/note
 publish: true
+date created: 2026-03-21T23:47
+date modified: 2026-04-22T16:17
 ---
 서로 상호변경이 쉽지않은 type이 있음 ex : uuid ↔ str
 이때는 using clause를 사용해주어야함. ex) using supabase_sub::uuid

@@ -6,6 +6,8 @@ tags:
   - topic/terminal
   - type/note
 publish: true
+date created: 2026-03-21T23:07
+date modified: 2026-04-22T16:17
 ---
 oh my posh 테마 적용 방법
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine

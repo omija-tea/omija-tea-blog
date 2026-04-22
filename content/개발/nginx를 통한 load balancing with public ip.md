@@ -7,6 +7,8 @@ tags:
   - topic/infra
   - type/note
 publish: true
+date created: 2026-03-21T23:07
+date modified: 2026-04-22T16:17
 ---
 ## 요구사항
 1. 각자의 public IP를 가진 여러개의 ec2 instance. 각각의 instance는 외부에 crawling을 수행할 예정

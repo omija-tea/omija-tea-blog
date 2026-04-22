@@ -5,6 +5,8 @@ tags:
   - topic/windows
   - type/note
 publish: true
+date created: 2026-03-21T23:07
+date modified: 2026-04-22T16:17
 ---
 hyperv 문제 해결하려다 보니까 cmd에서 dism이랑 dfc인가 그거 해야되는데 cmd가 안켜지는 문제 발생. 잠깐 켜졌다가 바로 꺼지더라. 그걸 해결하려면 cmd를 켜야되는 무한반복 상황 발생
 그래서 윈도우 포맷했다.

@@ -7,6 +7,8 @@ tags:
   - topic/aws
   - type/note
 publish: true
+date created: 2026-03-21T23:07
+date modified: 2026-04-22T16:17
 ---
 t4g.small이 이번 2024년동안 무료라길래 한번 써보기로 했다.
 다만 아키텍쳐가 github-action 기본 architecture인 x86이 아닌 arm이다.

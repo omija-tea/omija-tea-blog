@@ -6,6 +6,8 @@ tags:
   - topic/python
   - type/note
 publish: true
+date created: 2026-03-21T23:07
+date modified: 2026-04-22T16:17
 ---
 유저와 post가 다대다 관계인데, 유저가 먼저 생성되고 post가 추가되는 방식이라고 생각하자.
 ```python

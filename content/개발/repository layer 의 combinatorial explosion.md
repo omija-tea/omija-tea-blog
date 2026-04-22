@@ -6,6 +6,8 @@ tags:
   - topic/sqlalchemy
   - type/note
 publish: true
+date created: 2026-03-21T23:46
+date modified: 2026-04-22T16:17
 ---
 현재는 도메인 중심으로 repository를 설계하고 있음.
 ```python

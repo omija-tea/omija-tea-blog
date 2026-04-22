@@ -6,6 +6,8 @@ tags:
   - topic/python
   - type/note
 publish: true
+date created: 2026-03-21T23:07
+date modified: 2026-04-22T16:17
 ---
 relationship을 사용하고 있을때, 특정 attributer가 load 된 상태인지 확인해야하는 경우가 있다.
 특정 경우를 처리하는 함수를 만드는데, 로딩이 안되어있는 상태에서 요청한다면 튕군다던가 하는 경우?

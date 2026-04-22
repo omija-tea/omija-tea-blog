@@ -6,6 +6,8 @@ tags:
   - topic/pydantic
   - type/note
 publish: true
+date created: 2026-03-21T23:07
+date modified: 2026-04-22T16:17
 ---
 [Present Field Name Rather Than Alias When Using Intellisense · Issue #5893 · pydantic/pydantic](https://github.com/pydantic/pydantic/issues/5893#issuecomment-2512807073)
 

@@ -6,6 +6,8 @@ tags:
   - topic/pycharm
   - type/note
 publish: true
+date created: 2026-03-21T23:07
+date modified: 2026-04-22T16:17
 ---
 ruff pycharm 지원이 좀 구리다는 생각이 든다.
 ruff-lsp는 deprecate 되었기에 ruff server를 사용해야함. 다행히 pycharm-ruff-plugin이 이걸 지원

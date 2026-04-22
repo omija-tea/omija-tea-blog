@@ -6,6 +6,8 @@ tags:
   - topic/database
   - type/note
 publish: true
+date created: 2026-03-21T23:07
+date modified: 2026-04-22T16:17
 ---
 RDS 에서 production, test 두개의 database가 굴러가고 있다.
 production 에 있는 데이터를 test로 옮기되, 그대로 dump 하는게 아니라 복잡한 조건을 거친 후 조건에 맞는 애들만 update 해줘야 하는 상황 발생.

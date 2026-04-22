@@ -6,6 +6,8 @@ tags:
   - topic/infra
   - type/log
 publish: true
+date created: 2026-03-21T23:07
+date modified: 2026-04-22T16:17
 ---
 서버에 버그가 나서 빨리 들어가서 확인해야하는데 aws security group에 문제가 발생함
 ![[IMG-20260321223745036.png]]

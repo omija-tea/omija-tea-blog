@@ -7,6 +7,8 @@ tags:
   - topic/sqlalchemy
   - type/note
 publish: true
+date created: 2026-03-21T23:07
+date modified: 2026-04-22T16:17
 ---
 pytest에서 dependency injection 관련 depends mocking이 안되는 문제 발생
 이거 fastapi app 단에서 depends를 resolve 해주는거라 내가 따로 unittest를 작성하면 depends가 제대로 작동을 안한다.

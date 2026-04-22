@@ -7,6 +7,8 @@ tags:
   - topic/cicd
   - type/note
 publish: true
+date created: 2026-03-21T23:07
+date modified: 2026-04-22T16:17
 ---
 코드를 docker image로 만들고 ecr에 푸쉬한 뒤 서버에서 땡겨서 배포하는 github action을 만들자. github 사이트에서 직접 클릭해서 작동하도록 먼저 만들어보자.
 

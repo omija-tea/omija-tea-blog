@@ -6,6 +6,8 @@ tags:
   - topic/python
   - type/note
 publish: true
+date created: 2026-03-21T23:47
+date modified: 2026-04-22T16:17
 ---
 ```bash
 # rye 설치. 하라는대로 하면 됨

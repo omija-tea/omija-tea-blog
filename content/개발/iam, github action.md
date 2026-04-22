@@ -6,6 +6,8 @@ tags:
   - topic/cicd
   - type/note
 publish: true
+date created: 2026-03-21T23:46
+date modified: 2026-04-22T16:17
 ---
 iam을 이용하여 여러 명의 admin 계정을 만들었음. 루트 계정 쓰다가 비밀번호 실수로 틀리면 example.com으로 인증코드 날아가는거 그거 일일이 관리해줄순 없으니까…
 
