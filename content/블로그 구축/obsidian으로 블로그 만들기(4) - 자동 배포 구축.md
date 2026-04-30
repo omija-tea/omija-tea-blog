@@ -12,6 +12,5 @@ data created: 2026-04-30T16:13
 그래서 rsync를 이용하였다.
 
 > [!NOTE]- blog-deploy.sh
-> ```sh
-> 
-> ```
+
+
