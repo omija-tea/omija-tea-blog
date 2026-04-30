@@ -7,8 +7,8 @@ tags:
   - topic/productivity
   - type/note
 publish: true
-date modified: 2026-04-30T16:51
-data created: 2026-04-28T12:10
+date modified: 2026-04-30T17:00
+date created: 2026-04-30T16:31
 ---
 # 요구사항
 1. 내가 수행하는 편집이 실시간으로 업데이트 되었으면 좋겠음

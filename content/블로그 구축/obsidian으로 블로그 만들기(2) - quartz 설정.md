@@ -6,8 +6,8 @@ tags:
   - topic/productivity
   - type/note
 publish: true
-date modified: 2026-04-30T16:51
-data created: 2026-04-29T09:59
+date modified: 2026-04-30T17:00
+date created: 2026-04-30T16:31
 ---
 # Quartz4
 obsidian(마크다운)을 쉽게 블로그로 배포할 수 있게 해주는 정적 사이트 생성기이다.

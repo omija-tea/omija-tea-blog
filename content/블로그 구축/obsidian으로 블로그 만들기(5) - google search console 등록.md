@@ -1,12 +1,12 @@
 ---
 title: obsidian으로 블로그 만들기(5) - google search console 등록
-date: 2026-04-28 12:09
+date: 2026-04-30T16:50:00
 tags:
   - topic/analytics
   - type/log
 publish: true
-date modified: 2026-04-30T16:52
-data created: 2026-04-30T16:28
+date modified: 2026-04-30T16:50
+date created: 2026-04-30T16:50
 ---
 # 문제
 분명 google search console 에 sitemap.xml을 등록했음에도 불구하고 색인이 제대로 생성되지 않는 문제가 발생

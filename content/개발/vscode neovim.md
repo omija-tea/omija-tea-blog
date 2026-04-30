@@ -1,5 +1,5 @@
 ---
-title: "vscode neovim"
+title: vscode neovim
 date: 2024-05-28 19:59
 tags:
   - topic/vscode
@@ -8,7 +8,6 @@ tags:
 publish: true
 date created: 2026-03-21T23:07
 date modified: 2026-04-30T16:59
-data created: 2026-04-22T17:09
 ---
 ### vscode neovim visual 모드에서 copilot inline chat이 안 되는 문제
 ```json

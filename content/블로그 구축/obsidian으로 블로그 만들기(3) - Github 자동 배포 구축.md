@@ -6,8 +6,8 @@ tags:
   - topic/git
   - type/note
 publish: true
-date modified: 2026-04-30T16:52
-data created: 2026-04-30T15:35
+date modified: 2026-04-30T17:00
+date created: 2026-04-30T16:31
 ---
 CD를 구축해보자.
 

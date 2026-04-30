@@ -7,8 +7,8 @@ tags:
   - topic/terminal
   - type/note
 publish: true
-date modified: 2026-04-30T16:52
-data created: 2026-04-30T16:13
+date modified: 2026-04-30T17:00
+date created: 2026-04-30T16:31
 ---
 이제 마무리 해보자.
 

@@ -59,4 +59,8 @@ date modified: 2026-04-22T16:17
 ---
 
 기술과 개발에 대한 이야기를 기록합니다.
+개발하면서 근근이 적어놓은 이야기들을 블로그화 했기에, 가독성이 많이 
+
+
+
 이 블로그는 [Obsidian](https://obsidian.md)으로 작성하고, [Quartz](https://quartz.jzhao.xyz)로 빌드하여 GitHub Pages에 배포됩니다.
