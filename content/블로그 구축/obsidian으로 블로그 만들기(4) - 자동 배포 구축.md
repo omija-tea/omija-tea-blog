@@ -297,4 +297,7 @@ data created: 2026-04-30T16:13
 > echo "═══════════════════════════════════════"
 > ```
 
-claude가 도와줬다. 이걸 이용해서 blog-deploy.sh 를 system
+claude가 도와줬다.
+* blog-deploy.sh : 주기적으로 변경사항을 확인해서 quartz 쪽으로 데이터를 끌어온다
+* deploy-service.sh : blog-deploy.sh 를 systemd 에 서비스로 등록해준다
+* check-status.sh : status 확인용 sh
