@@ -17,3 +17,10 @@ CD를 구축해보자.
 1. 도메인
 2. 라즈베리파이(이미 충족)
 3. github 계정
+
+# Github Action을 씁시다
+1. Github에 repo하나 만들고, 해당 repo를 remote로 등록
+2. .github/workflows에 deploy.yml을 작성
+```yaml
+
+```
