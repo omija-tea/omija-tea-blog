@@ -69,4 +69,5 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 ```
-
+3. github page 설정 잡아주기
+4. 
