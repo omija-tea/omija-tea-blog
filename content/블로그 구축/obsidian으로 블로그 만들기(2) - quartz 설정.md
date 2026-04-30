@@ -19,6 +19,14 @@ quartz/quartz/static 안에 icon.png 라는 이름으로 넣으면 됨
 ![[IMG-20260430152318149.png]]
 기본적으로 OgImage를 지원하는데, 한글이 깨지는 문제가 있음.
 quartz/quartz/static/fonts 에 ttf폰트 넣어줘야됨. 저는 Pretendard 넣었습니다
+이후 quartz/quartz/quartz.config.ts의 폰트 부분을 바꿔주면 됨
+```ts
+      typography: {
+        header: "Pretendard Variable",
+        body: "Pretendard Variable",
+        code: "IBM Plex Mono",
+      },
+```
 
 ### 탐색탭 날짜별로 정렬
 탐색탭 기본정렬은 날짜별 정렬이 아니다. 날짜별 정렬이 깔끔하므로 구현해보자.
@@ -37,29 +45,17 @@ quartz/quartz/static/fonts 에 ttf폰트 넣어줘야됨. 저는 Pretendard 넣�
 quartz/quartz/plugins/emitters/contentIndex.tsx 에서 content.date를 지우고 return하는 구문을 없애주자. content.date를 살려둔채로 올려야 윗층에서 쓸 수 있다.
 ```ts
     Component.DesktopOnly(
-
       Component.Explorer({
-
         title: "탐색",
-
         sortFn: (a, b) => {
-
           // 폴더는 항상 위로
-
           if (a.isFolder && !b.isFolder) return -1
-
           if (!a.isFolder && b.isFolder) return 1
-
   
-
           // 둘 다 파일이면 날짜 내림차순 (최신 글이 위)
-
           if (!a.isFolder && !b.isFolder) {
-
             const dateA = a.data?.date ? new Date(a.data.date) : new Date(0)
-
             const dateB = b.data?.date ? new Date(b.data.date) : new Date(0)
-
             return dateB.getTime() - dateA.getTime()
           }
   
@@ -72,3 +68,4 @@ quartz/quartz/plugins/emitters/contentIndex.tsx 에서 content.date를 지우고
       }),
     ),
 ```
+sortFn에 위와같은 정렬 람다식 넣어주면 된다. 아무튼 date 정보를 사용할 수 있게 되었으니, 알아서 여기서 커스텀 하면 됨!
