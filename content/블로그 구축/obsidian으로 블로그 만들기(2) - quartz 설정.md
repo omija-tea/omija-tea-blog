@@ -3,7 +3,6 @@ title: obsidian으로 블로그 만들기(2) - quartz 설정
 date: 2026-04-28 12:30
 tags: []
 publish: false
-date created: 2026-04-28T12:30
 date modified: 2026-04-30T15:34
 data created: 2026-04-29T09:59
 ---
@@ -76,5 +75,11 @@ sortFn에 위와같은 정렬 람다식 넣어주면 된다. 아무튼 date 정�
 
 컨텐츠 채우기는 다음편에 ㄱㄱ
 
+
+
+
+
+
+---
 [[obsidian으로 블로그 만들기(1) - obsidian remotely save]]
 **[[obsidian으로 블로그 만들기(2) - quartz 설정]]**
