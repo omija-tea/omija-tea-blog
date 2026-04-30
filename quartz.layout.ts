@@ -13,6 +13,20 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   afterBody: [
+    Component.ConditionalRender({
+      component: Component.RecentNotes({
+        title: "최근 작성한 글",
+        limit: 5,
+        showTags: false,
+        filter: (f) => !f.frontmatter?.draft,
+        sort: (f1, f2) => {
+          const d1 = f1.dates?.published ?? new Date(0)
+          const d2 = f2.dates?.published ?? new Date(0)
+          return d2.getTime() - d1.getTime()
+        }
+      }),
+      condition: (page) => page.fileData.slug !== "index",
+    }),
     Component.Comments({
       provider: "giscus",
       options: {
@@ -106,21 +120,27 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.Graph({
       localGraph: { depth: 1, showTags: true }
     })),
-    Component.DesktopOnly(Component.TableOfContents()),
+    Component.ConditionalRender({
+      component: Component.DesktopOnly(Component.TableOfContents()),
+      condition: (page) => page.fileData.slug !== "index",
+    }),
     Component.Backlinks(),
-    Component.DesktopOnly(
-      Component.RecentNotes({
-        title: "최근 작성한 글",
-        limit: 10,
-        showTags: true,
-        filter: (f) => !f.frontmatter?.draft,
-        sort: (f1, f2) => {
-          const d1 = f1.dates?.published ?? new Date(0)
-          const d2 = f2.dates?.published ?? new Date(0)
-          return d2.getTime() - d1.getTime()
-        }
-      }),
-    ),
+    Component.ConditionalRender({
+      component: Component.DesktopOnly(
+        Component.RecentNotes({
+          title: "최근 작성한 글",
+          limit: 10,
+          showTags: true,
+          filter: (f) => !f.frontmatter?.draft,
+          sort: (f1, f2) => {
+            const d1 = f1.dates?.published ?? new Date(0)
+            const d2 = f2.dates?.published ?? new Date(0)
+            return d2.getTime() - d1.getTime()
+          }
+        }),
+      ),
+      condition: (page) => page.fileData.slug === "index",
+    }),
   ],
 }
 
