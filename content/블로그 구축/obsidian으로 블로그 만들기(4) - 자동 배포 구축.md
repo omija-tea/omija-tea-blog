@@ -1,7 +1,11 @@
 ---
 title: obsidian으로 블로그 만들기(4) - 자동 배포 구축
 date: 2026-04-30 16:13
-tags: []
+tags:
+  - topic/raspberrypi
+  - topic/cicd
+  - topic/terminal
+  - type/note
 publish: true
 date modified: 2026-04-30T16:27
 data created: 2026-04-30T16:13

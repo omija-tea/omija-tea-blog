@@ -1,7 +1,10 @@
 ---
 title: obsidian으로 블로그 만들기(2) - quartz 설정
 date: 2026-04-28 12:30
-tags: []
+tags:
+  - topic/developer-tools
+  - topic/productivity
+  - type/note
 publish: true
 date modified: 2026-04-30T16:27
 data created: 2026-04-29T09:59

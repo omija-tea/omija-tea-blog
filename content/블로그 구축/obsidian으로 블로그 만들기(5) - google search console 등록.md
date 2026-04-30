@@ -1,7 +1,9 @@
 ---
 title: obsidian으로 블로그 만들기 - google search console 등록
 date: 2026-04-28 12:09
-tags: []
+tags:
+  - topic/analytics
+  - type/log
 publish: true
 date modified: 2026-04-30T16:28
 data created: 2026-04-30T16:28
