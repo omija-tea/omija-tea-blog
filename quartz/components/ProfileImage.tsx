@@ -1,14 +1,18 @@
+import { pathToRoot } from "../util/path"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 export default (() => {
-    function ProfileImage({ displayClass }: QuartzComponentProps) {
+    function ProfileImage({ fileData, displayClass }: QuartzComponentProps) {
+        const baseDir = pathToRoot(fileData.slug!)
         return (
             <div class={`profile-image-container ${displayClass ?? ""}`}>
-                <img
-                    src="/static/profile.png"
-                    alt="프로필 사진"
-                    class="profile-image"
-                />
+                <a href={baseDir}>
+                    <img
+                        src="/static/profile.png"
+                        alt="프로필 사진"
+                        class="profile-image"
+                    />
+                </a>
             </div>
         )
     }

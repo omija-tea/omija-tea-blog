@@ -144,11 +144,41 @@ export const defaultListPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer({ title: "탐색" })),
+    Component.DesktopOnly(
+      Component.Explorer({
+        title: "탐색",
+        sortFn: (a, b) => {
+          if (a.isFolder && !b.isFolder) return -1
+          if (!a.isFolder && b.isFolder) return 1
+          if (!a.isFolder && !b.isFolder) {
+            const dateA = a.data?.date ? new Date(a.data.date) : new Date(0)
+            const dateB = b.data?.date ? new Date(b.data.date) : new Date(0)
+            return dateB.getTime() - dateA.getTime()
+          }
+          return a.displayName.localeCompare(b.displayName, undefined, {
+            numeric: true,
+            sensitivity: "base",
+          })
+        },
+      }),
+    ),
     Component.MobileOnly(
       Component.Explorer({
         title: "탐색",
         folderDefaultState: "collapsed",
+        sortFn: (a, b) => {
+          if (a.isFolder && !b.isFolder) return -1
+          if (!a.isFolder && b.isFolder) return 1
+          if (!a.isFolder && !b.isFolder) {
+            const dateA = a.data?.date ? new Date(a.data.date) : new Date(0)
+            const dateB = b.data?.date ? new Date(b.data.date) : new Date(0)
+            return dateB.getTime() - dateA.getTime()
+          }
+          return a.displayName.localeCompare(b.displayName, undefined, {
+            numeric: true,
+            sensitivity: "base",
+          })
+        },
       }),
     ),
   ],
