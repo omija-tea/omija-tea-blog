@@ -69,5 +69,12 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 ```
-3. github page 설정 잡아주기
-4. 
+3. github page 설정 잡아주기 (커스텀 도메인 등..)
+	1. production branch V4로 잡아주기
+	2. Framework preset None
+4. 끝
+
+
+간단하다. 이제 텅 빈 페이지가 호스팅 되고 있을것.
+이제 진짜로 게시물을 집어 넣어보자.
+
