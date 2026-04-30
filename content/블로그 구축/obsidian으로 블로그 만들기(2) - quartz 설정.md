@@ -6,7 +6,7 @@ tags:
   - topic/productivity
   - type/note
 publish: true
-date modified: 2026-04-30T16:27
+date modified: 2026-04-30T16:51
 data created: 2026-04-29T09:59
 ---
 # Quartz4
@@ -85,7 +85,11 @@ sortFn에 위와같은 정렬 람다식 넣어주면 된다. 아무튼 date 정�
 
 ---
 [[obsidian으로 블로그 만들기(1) - obsidian remotely save]]
+
 **[[obsidian으로 블로그 만들기(2) - quartz 설정]]**
+
 [[obsidian으로 블로그 만들기(3) - Github 자동 배포 구축]]
+
 [[obsidian으로 블로그 만들기(4) - 자동 배포 구축]]
+
 [[obsidian으로 블로그 만들기(5) - google search console 등록]]
