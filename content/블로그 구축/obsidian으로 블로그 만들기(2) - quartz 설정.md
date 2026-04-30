@@ -4,7 +4,8 @@ date: 2026-04-28 12:30
 tags: []
 publish: false
 date created: 2026-04-28T12:30
-date modified: 2026-04-22T16:17
+date modified: 2026-04-30T15:34
+data created: 2026-04-29T09:59
 ---
 # Quartz4
 obsidian(마크다운)을 쉽게 블로그로 배포할 수 있게 해주는 정적 사이트 생성기이다.
@@ -28,7 +29,7 @@ quartz/quartz/static/fonts 에 ttf폰트 넣어줘야됨. 저는 Pretendard 넣�
       },
 ```
 
-마지막으로 
+마지막으로 quartz.config.ts 의 emitters 파트에 `Plugin.CustomOgImages({})` 넣어주면 끝
 
 ### 탐색탭 날짜별로 정렬
 탐색탭 기본정렬은 날짜별 정렬이 아니다. 날짜별 정렬이 깔끔하므로 구현해보자.
@@ -71,3 +72,9 @@ quartz/quartz/plugins/emitters/contentIndex.tsx 에서 content.date를 지우고
     ),
 ```
 sortFn에 위와같은 정렬 람다식 넣어주면 된다. 아무튼 date 정보를 사용할 수 있게 되었으니, 알아서 여기서 커스텀 하면 됨!
+
+
+컨텐츠 채우기는 다음편에 ㄱㄱ
+
+[[obsidian으로 블로그 만들기(1) - obsidian remotely save]]
+**[[obsidian으로 블로그 만들기(2) - quartz 설정]]**

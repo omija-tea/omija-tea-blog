@@ -3,7 +3,7 @@ title: obsidian으로 블로그 만들기(1) - obsidian remotely save
 date: 2026-04-28 12:10
 tags: []
 publish: false
-date modified: 2026-04-28T12:28
+date modified: 2026-04-30T15:34
 data created: 2026-04-28T12:10
 ---
 # 요구사항
@@ -57,3 +57,13 @@ asdf:
 # 결과
 Self-hosted liveSync에 비해 매우 간단하게 구성이 가능했다. 다른 기기에 가더라도 Remotely save 플러그인만 깔고 설정 몇개만 잡아주면 뚝딱 연결된다.
 당연히 노션급 동기화를 보여줄 순 없지만 이정도면 전혀 문제없이 사용 가능하다!!
+
+
+
+
+
+
+
+---
+**[[obsidian으로 블로그 만들기(1) - obsidian remotely save]]**
+[[obsidian으로 블로그 만들기(2) - quartz 설정]]
