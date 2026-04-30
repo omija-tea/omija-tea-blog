@@ -20,7 +20,7 @@ quartz/quartz/static 안에 icon.png 라는 이름으로 넣으면 됨
 기본적으로 OgImage를 지원하는데, 한글이 깨지는 문제가 있음.
 quartz/quartz/static/fonts 에 ttf폰트 넣어줘야됨. 저는 Pretendard 넣었습니다
 이후 quartz/quartz/quartz.config.ts의 폰트 부분을 바꿔주면 됨
-```ts
+```ts title="quartz.config.ts"
       typography: {
         header: "Pretendard Variable",
         body: "Pretendard Variable",
@@ -32,7 +32,7 @@ quartz/quartz/static/fonts 에 ttf폰트 넣어줘야됨. 저는 Pretendard 넣�
 
 ### 탐색탭 날짜별로 정렬
 탐색탭 기본정렬은 날짜별 정렬이 아니다. 날짜별 정렬이 깔끔하므로 구현해보자.
-```ts {7}
+```ts {7} title="contentIndex.tsx"
       const simplifiedIndex = Object.fromEntries(
         Array.from(linkIndex).map(([slug, content]) => {
           // remove description and from content index as nothing downstream
@@ -45,7 +45,7 @@ quartz/quartz/static/fonts 에 ttf폰트 넣어줘야됨. 저는 Pretendard 넣�
       )
 ```
 quartz/quartz/plugins/emitters/contentIndex.tsx 에서 content.date를 지우고 return하는 구문을 없애주자. content.date를 살려둔채로 올려야 윗층에서 쓸 수 있다.
-```ts
+```ts title="quartz.config.ts"
     Component.DesktopOnly(
       Component.Explorer({
         title: "탐색",
