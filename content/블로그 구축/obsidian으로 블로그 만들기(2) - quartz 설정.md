@@ -15,4 +15,6 @@ obsidian(마크다운)을 쉽게 블로그로 배포할 수 있게 해주는 정
 quartz/static 이 아닌 quartz/quartz/static에 넣으면 됨
 ### favicon 어케하나요?
 quartz/quartz/static 안에 icon.png 라는 이름으로 넣으면 됨
-### 
+### opengraph(meta tag) 어케하나요?
+![[IMG-20260430152318149.png]]
+기본적으로 OgImage를 지원하는데, 한글이 깨지는 문제가 있음.
