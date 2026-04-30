@@ -7,7 +7,8 @@ tags:
   - type/note
 publish: true
 date created: 2026-03-21T23:45
-date modified: 2026-04-22T16:17
+date modified: 2026-04-30T16:57
+data created: 2026-04-22T17:09
 ---
 ```python
 # ! 디버그용 쿼리 플랜 출력 코드
@@ -36,7 +37,7 @@ def explain_before_cursor_execute(
 ### 기존
 Seq Scan on public.userpostlink  (cost=0.02..372.63 rows=13 width=39) (actual time=0.063..1.810 rows=27 loops=1)
 Output: post_id, user_id, created_at
-Filter: ((userpostlink.post_id)::text = ANY ('{ig-123,ig-C9zl-aIPdh-,ig-123,ig-123,ig-123,ig-123,ig-123,ig-123,ig-C-123}'::text[]))
+Filter: ((userpostlink.post_id)::text = ANY ('{ig-123,ig-123,ig-123,ig-123,ig-123,ig-123,ig-123,ig-123,ig-C-123}'::text[]))
 Rows Removed by Filter: 14954
 Planning Time: 0.053 ms
 Execution Time: 1.815 ms
