@@ -3,7 +3,7 @@ title: obsidian으로 블로그 만들기(4) - 자동 배포 구축
 date: 2026-04-30 16:13
 tags: []
 publish: false
-date modified: 2026-04-30T16:13
+date modified: 2026-04-30T16:26
 data created: 2026-04-30T16:13
 ---
 이제 마무리 해보자.
@@ -301,3 +301,14 @@ claude가 도와줬다.
 * blog-deploy.sh : 주기적으로 변경사항을 확인해서 quartz 쪽으로 데이터를 끌어온다
 * deploy-service.sh : blog-deploy.sh 를 systemd 에 서비스로 등록해준다
 * check-status.sh : status 확인용 sh
+여기까지 완료하면 끝!
+
+
+# 이제 뭐가 되느냐
+1. 폰이든, 컴이든 어디서든 obsidian의 blog 폴더에서 게시물을 작성하거나 수정한다
+2. Remotely Save 플러그인을 통해 알아서 라즈베리파이로 데이터가 흘러들어간다
+3. blog-deploy.sh 서비스가 데이터 차이를 발견하고 quartz 쪽으로 데이터를 끌어온다
+4. 알아서 github 에 push가 들어간다
+5. github action이 돌아가고 배포가 된다
+
+끝~
