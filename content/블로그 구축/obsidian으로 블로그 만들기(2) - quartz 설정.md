@@ -3,7 +3,7 @@ title: obsidian으로 블로그 만들기(2) - quartz 설정
 date: 2026-04-28 12:30
 tags: []
 publish: false
-date modified: 2026-04-30T15:34
+date modified: 2026-04-30T15:48
 data created: 2026-04-29T09:59
 ---
 # Quartz4
@@ -32,7 +32,7 @@ quartz/quartz/static/fonts 에 ttf폰트 넣어줘야됨. 저는 Pretendard 넣�
 
 ### 탐색탭 날짜별로 정렬
 탐색탭 기본정렬은 날짜별 정렬이 아니다. 날짜별 정렬이 깔끔하므로 구현해보자.
-```ts
+```ts {7}
       const simplifiedIndex = Object.fromEntries(
         Array.from(linkIndex).map(([slug, content]) => {
           // remove description and from content index as nothing downstream

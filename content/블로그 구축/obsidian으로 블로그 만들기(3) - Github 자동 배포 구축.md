@@ -69,4 +69,3 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 ```
-[여기서 가져옴](https://quartz.jzhao.xyz/hosting)
