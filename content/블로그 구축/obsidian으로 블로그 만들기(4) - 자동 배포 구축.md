@@ -7,7 +7,7 @@ tags:
   - topic/terminal
   - type/note
 publish: true
-date modified: 2026-04-30T16:27
+date modified: 2026-04-30T16:52
 data created: 2026-04-30T16:13
 ---
 이제 마무리 해보자.
@@ -319,7 +319,11 @@ claude가 도와줬다.
 
 ---
 [[obsidian으로 블로그 만들기(1) - obsidian remotely save]]
+
 [[obsidian으로 블로그 만들기(2) - quartz 설정]]
+
 [[obsidian으로 블로그 만들기(3) - Github 자동 배포 구축]]
+
 **[[obsidian으로 블로그 만들기(4) - 자동 배포 구축]]**
+
 [[obsidian으로 블로그 만들기(5) - google search console 등록]]

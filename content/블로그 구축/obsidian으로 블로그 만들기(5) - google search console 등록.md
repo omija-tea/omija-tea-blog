@@ -1,11 +1,11 @@
 ---
-title: obsidian으로 블로그 만들기 - google search console 등록
+title: obsidian으로 블로그 만들기(5) - google search console 등록
 date: 2026-04-28 12:09
 tags:
   - topic/analytics
   - type/log
 publish: true
-date modified: 2026-04-30T16:28
+date modified: 2026-04-30T16:52
 data created: 2026-04-30T16:28
 ---
 # 문제
@@ -35,7 +35,11 @@ URL 검사 탭에서 **실제 URL 테스트**를 누르면 테스트가 가능�
 
 ---
 [[obsidian으로 블로그 만들기(1) - obsidian remotely save]]
+
 [[obsidian으로 블로그 만들기(2) - quartz 설정]]
+
 [[obsidian으로 블로그 만들기(3) - Github 자동 배포 구축]]
+
 [[obsidian으로 블로그 만들기(4) - 자동 배포 구축]]
+
 **[[obsidian으로 블로그 만들기(5) - google search console 등록]]**
