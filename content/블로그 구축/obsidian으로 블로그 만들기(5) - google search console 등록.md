@@ -2,10 +2,9 @@
 title: obsidian으로 블로그 만들기 - google search console 등록
 date: 2026-04-28 12:09
 tags: []
-publish: false
-date created: 2026-03-22T01:26
+publish: true
 date modified: 2026-04-30T16:27
-data created: 2026-04-29T09:59
+data created: 2026-04-30T16:28:00
 ---
 # 문제
 분명 google search console 에 sitemap.xml을 등록했음에도 불구하고 색인이 제대로 생성되지 않는 문제가 발생
@@ -31,3 +30,10 @@ URL 검사 탭에서 **실제 URL 테스트**를 누르면 테스트가 가능�
 # 해결
 ![[IMG-20260430162712676.png]]
 짜잔~ sitemap url 끝에 ?v=1을 붙여주니 한번에 성공했다. 3개월동안 머리굴렸던게 무색할 정도로 쉽게 해결됨..!
+
+---
+[[obsidian으로 블로그 만들기(1) - obsidian remotely save]]
+[[obsidian으로 블로그 만들기(2) - quartz 설정]]
+[[obsidian으로 블로그 만들기(3) - Github 자동 배포 구축]]
+[[obsidian으로 블로그 만들기(4) - 자동 배포 구축]]
+**[[obsidian으로 블로그 만들기(5) - google search console 등록]]**

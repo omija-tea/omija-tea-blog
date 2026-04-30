@@ -2,8 +2,8 @@
 title: obsidian으로 블로그 만들기(1) - obsidian remotely save
 date: 2026-04-28 12:10
 tags: []
-publish: false
-date modified: 2026-04-30T15:34
+publish: true
+date modified: 2026-04-30T16:27
 data created: 2026-04-28T12:10
 ---
 # 요구사항
