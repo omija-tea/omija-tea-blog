@@ -1,5 +1,5 @@
 ---
-title: obsidian으로 블로그 만들기(3) - 자동 배포 구축
+title: obsidian으로 블로그 만들기(3) - Github 자동 배포 구축
 date: 2026-04-30 15:36
 tags:
   - topic/cicd
