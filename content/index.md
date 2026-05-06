@@ -4,6 +4,7 @@ date: 2023-01-01
 publish: true
 tags:
   - topic/python
+  - topic/crawling
   - topic/java
   - topic/jvm
   - topic/flutter
@@ -51,7 +52,6 @@ tags:
   - topic/product
   - topic/analytics
   - topic/productivity
-  - topic/crawling
   - type/note
   - type/log
   - type/idea
