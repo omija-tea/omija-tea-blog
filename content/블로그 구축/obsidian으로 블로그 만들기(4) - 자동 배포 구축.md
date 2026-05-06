@@ -7,7 +7,7 @@ tags:
   - topic/terminal
   - type/note
 publish: true
-date modified: 2026-04-30T17:00
+date modified: 2026-05-06T11:52
 date created: 2026-04-30T16:31
 ---
 이제 마무리 해보자.
@@ -280,7 +280,7 @@ date created: 2026-04-30T16:31
 > if [ -d "$VAULT_BLOG" ]; then
 >     MD_COUNT=$(find "$VAULT_BLOG" -name "*.md" | wc -l)
 >     IMG_COUNT=$(find "$VAULT_BLOG" -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.gif" -o -name "*.svg" \) | wc -l)
->     DRAFT_COUNT=$(grep -rl "draft: true" "$VAULT_BLOG"/ 2>/dev/null | wc -l)
+>     DRAFT_COUNT=$(grep -rl "d.raft: true" "$VAULT_BLOG"/ 2>/dev/null | wc -l)
 >     ok "마크다운 파일: ${MD_COUNT}개"
 >     ok "이미지 파일: ${IMG_COUNT}개"
 >     [ "$DRAFT_COUNT" -gt 0 ] && warn "초안(draft): ${DRAFT_COUNT}개" || ok "초안 없음"
