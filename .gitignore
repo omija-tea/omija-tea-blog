@@ -11,5 +11,7 @@ private/
 replit.nix
 content/CLAUDE.md
 content/.claude/
+content/_claude/
 content/temp/
 **/_README.md
+**/_*.md
