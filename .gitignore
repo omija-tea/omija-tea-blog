@@ -9,3 +9,7 @@ tsconfig.tsbuildinfo
 private/
 .replit
 replit.nix
+content/CLAUDE.md
+content/.claude/
+content/temp/
+**/_README.md
