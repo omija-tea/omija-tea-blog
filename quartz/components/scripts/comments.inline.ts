@@ -60,6 +60,12 @@ type GiscusElement = Omit<HTMLElement, "dataset"> & {
 }
 
 document.addEventListener("nav", () => {
+  const botPattern =
+    /bot|crawler|spider|crawling|googlebot|bingbot|slurp|duckduckbot|baiduspider|yandexbot|sogou|exabot|facebot|ia_archiver/i
+  if (botPattern.test(navigator.userAgent)) {
+    return
+  }
+
   const giscusContainer = document.querySelector(".giscus") as GiscusElement
   if (!giscusContainer) {
     return
