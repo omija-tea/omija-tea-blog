@@ -64,8 +64,14 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(Component.ProfileImage()),
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    Component.Search(),
-    Component.Darkmode(),
+    Component.Flex({
+      components: [
+        { Component: Component.Search(), grow: true },
+        { Component: Component.Darkmode(), shrink: false },
+      ],
+      direction: "row",
+      gap: "0.5rem",
+    }),
     Component.DesktopOnly(
       Component.Explorer({
         title: "탐색",
@@ -162,8 +168,14 @@ export const defaultListPageLayout: PageLayout = {
     Component.DesktopOnly(Component.ProfileImage()),
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    Component.Search(),
-    Component.Darkmode(),
+    Component.Flex({
+      components: [
+        { Component: Component.Search(), grow: true },
+        { Component: Component.Darkmode(), shrink: false },
+      ],
+      direction: "row",
+      gap: "0.5rem",
+    }),
     Component.DesktopOnly(
       Component.Explorer({
         title: "탐색",

@@ -1,1 +1,9 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+
+// 모바일: 검색+다크모드 Flex 묶음이 남은 공간을 채우도록
+@media all and (max-width: 800px) {
+  .sidebar.left .flex-component {
+    flex-grow: 1;
+    min-width: 0;
+  }
+}

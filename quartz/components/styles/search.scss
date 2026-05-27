@@ -2,15 +2,11 @@
 
 .search {
   min-width: fit-content;
-  max-width: 14rem;
-  @media all and ($mobile) {
-    flex-grow: 1;
-    margin-right: 0.75rem;
-  }
+  max-width: none;
 
   & > .search-button {
     background-color: transparent;
-    border: 1px var(--lightgray) solid;
+    border: 1px var(--darkgray) solid;
     border-radius: 4px;
     font-family: inherit;
     font-size: inherit;
