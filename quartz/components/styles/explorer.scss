@@ -94,6 +94,14 @@
   }
 }
 
+button.mobile-explorer-close {
+  display: none;
+
+  @media all and ($mobile) {
+    display: flex;
+  }
+}
+
 button.mobile-explorer,
 button.desktop-explorer {
   background-color: transparent;
@@ -263,6 +271,28 @@ li:has(> .folder-outer:not(.open))>.folder-container>svg {
       height: 100dvh;
       max-height: 100dvh;
       visibility: hidden;
+    // 닫기 버튼 (모바일 explorer-content 내부)
+    .mobile-explorer-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 102;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 5px;
+      color: var(--darkgray);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        stroke: var(--darkgray);
+      }
+
+      &:hover svg {
+        stroke: var(--dark);
+      }
     }
 
     .mobile-explorer {
