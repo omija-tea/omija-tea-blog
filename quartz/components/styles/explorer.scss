@@ -135,17 +135,54 @@ button.desktop-explorer {
       overscroll-behavior: contain;
     }
 
-    & li>a {
-      color: var(--dark);
-      opacity: 0.75;
-      pointer-events: all;
-      display: block;
-      padding-top: 0.2rem;
-      padding-bottom: 0.2rem;
+    & li {
+      position: relative;
 
-      &.active {
-        opacity: 1;
-        color: var(--tertiary);
+      // tick: 세로 indent 선 위에 찍히는 짧은 가로선
+      &::before {
+        content: "";
+        position: absolute;
+        left: -0.8rem;        // indent border와 맞춤
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0.45rem;
+        height: 1px;
+        background-color: var(--lightgray);
+        pointer-events: none;
+      }
+
+      & > a {
+        color: var(--dark);
+        opacity: 0.75;
+        pointer-events: all;
+        display: block;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+        border-radius: 4px;
+        transition: background-color 150ms ease, opacity 150ms ease;
+
+        // 데스크톱: hover 배경
+        @media all and not ($mobile) {
+          &:hover {
+            background-color: var(--lightgray);
+            opacity: 1;
+          }
+        }
+
+        // 모바일: 탭 누르는 순간 피드백
+        @media all and ($mobile) {
+          &:active {
+            background-color: var(--lightgray);
+            opacity: 1;
+          }
+        }
+
+        &.active {
+          opacity: 1;
+          color: var(--tertiary);
+        }
       }
     }
   }
