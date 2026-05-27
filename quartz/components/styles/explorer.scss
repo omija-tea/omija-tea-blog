@@ -147,7 +147,7 @@ button.desktop-explorer {
         transform: translateY(-50%);
         width: 0.45rem;
         height: 1px;
-        background-color: var(--lightgray);
+        background-color: var(--gray);
         pointer-events: none;
       }
 
@@ -205,7 +205,7 @@ button.desktop-explorer {
     overflow: hidden;
     margin-left: 6px;
     padding-left: 0.8rem;
-    border-left: 1px solid var(--lightgray);
+    border-left: 1px solid var(--gray);
   }
 }
 
