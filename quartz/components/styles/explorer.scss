@@ -267,10 +267,31 @@ li:has(> .folder-outer:not(.open))>.folder-container>svg {
         transform 200ms ease,
         visibility 200ms ease;
       overflow: hidden;
-      padding: 4rem 0 2rem 0;
+      overflow-x: hidden;
+      padding: 4rem 1.2rem 2rem 1.2rem;
       height: 100dvh;
       max-height: 100dvh;
       visibility: hidden;
+
+      // 긴 제목이 패널 밖으로 넘어가지 않도록 처리
+      & ul li > a {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 100%;
+        display: block;
+      }
+
+      & .folder-container div > a,
+      & .folder-container div > button span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: calc(100% - 2rem);
+        display: inline-block;
+      }
+    }
+
     // 닫기 버튼 (모바일 explorer-content 내부)
     .mobile-explorer-close {
       position: absolute;
