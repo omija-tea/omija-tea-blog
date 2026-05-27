@@ -267,7 +267,7 @@ li:has(> .folder-outer:not(.open))>.folder-container>svg {
         transform 200ms ease,
         visibility 200ms ease;
       overflow: hidden;
-      overflow-x: hidden;
+      // 상단 여백: 햄버거 버튼 높이(~34px) + 1rem 패딩 확보
       padding: 4rem 1.2rem 2rem 1.2rem;
       height: 100dvh;
       max-height: 100dvh;
@@ -292,11 +292,12 @@ li:has(> .folder-outer:not(.open))>.folder-container>svg {
       }
     }
 
-    // 닫기 버튼 (모바일 explorer-content 내부)
+    // 닫기 버튼: 햄버거 버튼과 동일 위치·동일 모양
     .mobile-explorer-close {
       position: absolute;
+      // 사이드바 padding-top(1rem) + body padding 보정
       top: 1rem;
-      right: 1rem;
+      left: 1rem;
       z-index: 102;
       background-color: transparent;
       border: none;
@@ -307,11 +308,11 @@ li:has(> .folder-outer:not(.open))>.folder-container>svg {
       align-items: center;
       justify-content: center;
 
-      svg {
+      .lucide-menu {
         stroke: var(--darkgray);
       }
 
-      &:hover svg {
+      &:hover .lucide-menu {
         stroke: var(--dark);
       }
     }
