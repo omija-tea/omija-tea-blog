@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "fp=$(jq -r '.tool_input.file_path // empty'); echo \"$fp\" | grep -qE 'quartz/(components|plugins)/' && bash /home/playjnj/quartz/.claude/scripts/update-claude-md.sh 2>/dev/null || true",
+            "statusMessage": "CLAUDE.md 컴포넌트/플러그인 목록 갱신 중..."
+          }
+        ]
+      }
+    ]
+  }
+}
