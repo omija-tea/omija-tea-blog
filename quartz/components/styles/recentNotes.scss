@@ -11,17 +11,22 @@
 
     & > li {
       margin: 1rem 0;
-      .section > .desc > h3 > a {
-        background-color: transparent;
+      .section > .desc > h3 {
+        font-size: 0.95rem;
+
+        & > a {
+          background-color: transparent;
+        }
       }
 
       .section > .meta {
         margin: 0 0 0.5rem 0;
+        font-size: 0.75rem;
         opacity: 0.6;
       }
 
       .section > ul.tags > li > a.tag-link {
-        font-size: 0.75rem;
+        font-size: 0.65rem;
         padding: 0.1rem 0.3rem;
       }
     }
