@@ -73,18 +73,22 @@ export default (() => {
             />
           </>
         )}
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
 
         {cfg.baseUrl && (
           <>
             <meta property="twitter:domain" content={cfg.baseUrl}></meta>
             <meta property="og:url" content={socialUrl}></meta>
             <meta property="twitter:url" content={socialUrl}></meta>
+            <link rel="canonical" href={socialUrl} />
           </>
         )}
 
         <link rel="icon" href={iconPath} />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
         {js
