@@ -1,0 +1,25 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pending=$(ls 'C:/Users/SSAFY/Documents/Obsidian Vault/blog/temp/' 2>/dev/null | grep -v '^_' | grep -v '^$'); if [ -n \"$pending\" ]; then echo '[blog/temp] 정리 대기 중인 글:'; echo \"$pending\" | sed 's/^/  - /'; echo '→ /organize-temp 또는 \"임시글 정리해줘\"로 분류 가능'; else echo '[blog/temp] 깨끗함 (정리 대기 글 없음)'; fi"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python 'C:/Users/SSAFY/Documents/Obsidian Vault/scripts/tag-sync.py' 2>/dev/null"
+          }
+        ]
+      }
+    ]
+  }
+}

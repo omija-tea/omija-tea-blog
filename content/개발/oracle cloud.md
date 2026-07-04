@@ -1,0 +1,17 @@
+---
+title: oracle cloud
+date: 2023-03-21T20:21:00
+tags:
+  - topic/infra
+  - type/note
+publish: true
+date created: 2026-03-21T23:07
+date modified: 2026-04-22T16:17
+---
+회원가입하고 인스턴스 만들면 된다.
+oracle linux 맘에안드니까 쓰지 말자. dnf가 뭔가 너무 별로다.
+그냥 ubuntu로 진행 했다. 인스턴스 적당히 만들어주자.
+
+VCN(아마존의 VPC)에 들어가서 네트워크 보안 그룹을 만들어주면 특정 포트를 열어줄 수 있다. 특정 포트가 열린 보안그룹을 만들고, 내가 만든 인스턴스에 들어가서 해당 보안그룹 추가해주면 열린다.
+
+여기에 도커 깔아서 pull 땡겨줬다. 

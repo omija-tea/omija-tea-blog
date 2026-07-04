@@ -1,0 +1,59 @@
+---
+title: "nginx 일정시간 연결 차단"
+date: 2025-03-24 20:00
+tags:
+  - topic/nginx
+  - topic/infra
+  - type/note
+publish: true
+date created: 2026-03-21T23:07
+date modified: 2026-04-22T16:17
+---
+```bash
+events {
+    worker_connections 1024;
+}
+http {
+    upstream backend {
+        server 10.0.0.1;
+        server 10.0.0.2;
+    }
+
+    upstream naver_backend {
+        server 10.0.0.1 max_fails=2 fail_timeout=300s;
+        server 10.0.0.2 max_fails=2 fail_timeout=300s;
+    }
+
+    server {
+        listen 80;
+
+        location / {
+            proxy_pass http://backend;
+            proxy_next_upstream error timeout http_500 http_502 http_503 http_504 non_idempotent;
+
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+
+        location /crawl/sns {
+            proxy_pass http://backend;
+            proxy_next_upstream error timeout http_500 http_502 http_503 http_504 non_idempotent;
+
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+
+        location /crawl/naver/place {
+            proxy_pass http://naver_backend;
+            proxy_next_upstream error timeout http_500 http_502 http_503 http_504 non_idempotent;
+
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+    }
+}
+```
+503이 오면 그쪽으로 보내는 요청 한동안 막아둘 수 있음
