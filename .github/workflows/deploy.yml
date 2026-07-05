@@ -1,0 +1,61 @@
+name: Deploy Quartz 5 to GitHub Pages
+
+# ⚠️ 안전장치: 지금은 수동 실행(workflow_dispatch)만.
+# v5 검증 후 라이브로 전환할 준비가 되면 아래 push 트리거의 주석을 해제하세요.
+# (전환 시 blog.omija-tea.work 가 v5 빌드로 교체됩니다.)
+on:
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - v5
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # git 히스토리 전체 (날짜 정보용)
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      # v5 필수: 커뮤니티/로컬 플러그인 설치 + 플러그인 인덱스 생성.
+      # --from-config: quartz.config.yaml 기준으로 설치(로컬 ./plugins/* 심링크 포함).
+      - name: Install Quartz plugins
+        run: npx quartz plugin install --from-config -v
+
+      - name: Build Quartz
+        run: npx quartz build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,23 @@
+{
+  "name": "@omija-tea/fonts-cdn",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "quartz": {
+    "name": "fonts-cdn",
+    "displayName": "Fonts (CDN)",
+    "description": "Pretendard + IBM Plex Mono 웹폰트를 head <link>로 주입 (v4 custom.scss @import 대체)",
+    "category": "transformer",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 1,
+    "defaultEnabled": true,
+    "defaultOptions": {}
+  }
+}

@@ -1,0 +1,321 @@
+# yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
+#
+# omija-tea 블로그 — Quartz 5 설정
+# v4의 quartz.config.ts + quartz.layout.ts 를 v5 YAML 구조로 이관.
+# 커스텀 로컬 플러그인(ProfileImage, giscus lazy-load 등)은 아래 plugins 하단 참조.
+
+configuration:
+  pageTitle: 정남준 블로그
+  pageTitleSuffix: ""
+  enableSPA: true
+  enablePopovers: true
+  analytics:
+    provider: google
+    tagId: G-VLZ0VXMVX9
+  locale: ko-KR
+  baseUrl: blog.omija-tea.work
+  ignorePatterns:
+    - private
+    - templates
+    - .obsidian
+    - .trash
+    - _attachments/.obsidian
+    - _claude
+    - "**/_claude/**"
+  theme:
+    fontOrigin: local
+    cdnCaching: true
+    typography:
+      header: Pretendard Variable
+      body: Pretendard Variable
+      code: IBM Plex Mono
+    colors:
+      lightMode:
+        light: "#faf8f8"
+        lightgray: "#e5e5e5"
+        gray: "#b8b8b8"
+        darkgray: "#4e4e4e"
+        dark: "#2b2b2b"
+        secondary: "#284b63"
+        tertiary: "#84a59d"
+        highlight: rgba(143, 159, 169, 0.15)
+        textHighlight: "#fff23688"
+      darkMode:
+        light: "#161618"
+        lightgray: "#393639"
+        gray: "#646464"
+        darkgray: "#d4d4d4"
+        dark: "#ebebec"
+        secondary: "#7b97aa"
+        tertiary: "#84a59d"
+        highlight: rgba(143, 159, 169, 0.15)
+        textHighlight: "#fff23688"
+
+plugins:
+  # ── Transformers ──────────────────────────────────────────
+  # 커스텀 로컬 플러그인: Pretendard/IBM Plex Mono 웹폰트를 head <link>로 주입
+  - source: ./plugins/fonts-cdn
+    enabled: true
+    order: 1
+  - source: github:quartz-community/created-modified-date
+    enabled: true
+    options:
+      defaultDateType: modified
+      priority:
+        - frontmatter
+        - filesystem
+    order: 10
+  - source: github:quartz-community/syntax-highlighting
+    enabled: true
+    options:
+      theme:
+        light: github-light
+        dark: github-dark
+      keepBackground: false
+    order: 20
+  - source: github:quartz-community/obsidian-flavored-markdown
+    enabled: true
+    options:
+      enableInHtmlEmbed: false
+    order: 30
+  - source: github:quartz-community/github-flavored-markdown
+    enabled: true
+    order: 40
+  - source: github:quartz-community/table-of-contents
+    enabled: true
+    order: 50
+    layout:
+      position: right
+      priority: 30
+      display: desktop-only
+      condition: not-index
+  # 모바일 전용 TOC (beforeBody) — 동일 플러그인 2번째 인스턴스
+  - source:
+      repo: github:quartz-community/table-of-contents
+      name: toc-mobile
+    enabled: true
+    order: 51
+    layout:
+      position: beforeBody
+      priority: 25
+      display: mobile-only
+      condition: not-index
+  - source: github:quartz-community/crawl-links
+    enabled: true
+    options:
+      markdownLinkResolution: shortest
+    order: 60
+  - source: github:quartz-community/description
+    enabled: true
+    order: 70
+  - source: github:quartz-community/latex
+    enabled: true
+    options:
+      renderEngine: katex
+    order: 80
+
+  # ── Filters ───────────────────────────────────────────────
+  # v4: ExplicitPublish (publish:true 인 글만 배포). RemoveDrafts는 미사용.
+  - source: github:quartz-community/explicit-publish
+    enabled: true
+  - source: github:quartz-community/remove-draft
+    enabled: false
+
+  # ── Emitters ──────────────────────────────────────────────
+  # alias-redirects: SEO를 새로 시작하므로 레거시 리다이렉트 불필요 (사용자 요청으로 비활성화)
+  - source: github:quartz-community/alias-redirects
+    enabled: false
+  - source: github:quartz-community/content-index
+    enabled: true
+    options:
+      enableSiteMap: true
+      enableRSS: true
+      rssFullHtml: true
+  - source: github:quartz-community/favicon
+    enabled: true
+  # og-image: 테마 폰트가 Pretendard(구글폰트 아님)라 폰트 fetch 실패 → Task 4에서 폰트 설정 후 재활성화
+  - source: github:quartz-community/og-image
+    enabled: false
+  - source: github:quartz-community/cname
+    enabled: true
+  - source: github:quartz-community/content-page
+    enabled: true
+  - source: github:quartz-community/folder-page
+    enabled: true
+  - source: github:quartz-community/tag-page
+    enabled: true
+
+  # ── UI 컴포넌트 (layout 배치) ─────────────────────────────
+  # 커스텀 로컬 플러그인: 프로필 사진 (v4 ProfileImage 이식, 데스크톱 전용)
+  - source: ./plugins/profile-image
+    enabled: true
+    layout:
+      position: left
+      priority: 5
+      display: desktop-only
+  - source: github:quartz-community/page-title
+    enabled: true
+    layout:
+      position: left
+      priority: 10
+  - source: github:quartz-community/search
+    enabled: true
+    layout:
+      position: left
+      priority: 20
+      group: toolbar
+      groupOptions:
+        grow: true
+  - source: github:quartz-community/darkmode
+    enabled: true
+    layout:
+      position: left
+      priority: 30
+      group: toolbar
+      groupOptions:
+        shrink: false
+  - source: github:quartz-community/spacer
+    enabled: true
+    order: 25
+    layout:
+      position: left
+      priority: 25
+      display: mobile-only
+  - source: github:quartz-community/explorer
+    enabled: true
+    options:
+      title: 탐색
+    layout:
+      position: left
+      priority: 50
+  - source: github:quartz-community/graph
+    enabled: true
+    layout:
+      position: right
+      priority: 10
+  - source: github:quartz-community/backlinks
+    enabled: true
+    layout:
+      position: right
+      priority: 50
+  - source: github:quartz-community/breadcrumbs
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 5
+      condition: not-index
+  - source: github:quartz-community/article-title
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 10
+  - source: github:quartz-community/content-meta
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 20
+  - source: github:quartz-community/tag-list
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 30
+      condition: not-index
+  # 일반 글 하단(afterBody)의 최근 글 (비-index, limit 5)
+  - source: github:quartz-community/recent-notes
+    enabled: true
+    options:
+      limit: 5
+      showTags: false
+    layout:
+      position: afterBody
+      priority: 10
+      condition: not-index
+  # index 전용: 우측 사이드바 최근 글 (limit 10, 태그 표시) — 동일 플러그인 2번째 인스턴스
+  - source:
+      repo: github:quartz-community/recent-notes
+      name: recent-notes-index
+    enabled: true
+    options:
+      limit: 10
+      showTags: true
+    layout:
+      position: right
+      priority: 40
+      condition: index
+      display: desktop-only
+  # 커스텀 로컬 플러그인: giscus 댓글 (인터랙션 기반 lazy-load, v4 이식)
+  - source: ./plugins/comments-lazy
+    enabled: true
+    options:
+      provider: giscus
+      options:
+        repo: omija-tea/omija-tea-blog
+        repoId: R_kgDORs-kCQ
+        category: Announcements
+        categoryId: DIC_kwDORs-kCc4C49T9
+        lang: ko
+        mapping: pathname
+        reactionsEnabled: true
+        inputPosition: bottom
+    layout:
+      position: afterBody
+      priority: 20
+  # 스톡 comments는 비활성화 (위 로컬 lazy 버전으로 대체)
+  - source: github:quartz-community/comments
+    enabled: false
+  - source: github:quartz-community/footer
+    enabled: true
+    options:
+      links:
+        GitHub: https://github.com/omija-tea
+
+  # ── 미사용 (빌드/설치 대상에서 제외) ─────────────────────
+  - source: github:quartz-community/reader-mode
+    enabled: false
+  - source: github:quartz-community/citations
+    enabled: false
+  - source: github:quartz-community/hard-line-breaks
+    enabled: false
+  - source: github:quartz-community/ox-hugo
+    enabled: false
+  - source: github:quartz-community/roam
+    enabled: false
+  - source: github:quartz-community/fonts
+    enabled: false
+  # note-properties: v5에서 '---' YAML frontmatter를 파싱해 vfile.data.frontmatter를 채우는
+  # 실질적 frontmatter 파서. 반드시 활성화(order 5, 최우선). hidePropertiesView로 표는 숨김.
+  - source: github:quartz-community/note-properties
+    enabled: true
+    order: 5
+    options:
+      hidePropertiesView: true
+  - source: github:quartz-community/bases-page
+    enabled: false
+  - source: github:quartz-community/canvas-page
+    enabled: false
+  - source: github:quartz-community/unlisted-pages
+    enabled: false
+  - source: github:quartz-community/encrypted-pages
+    enabled: false
+  - source: github:quartz-community/stacked-pages
+    enabled: false
+
+layout:
+  groups:
+    toolbar:
+      priority: 35
+      direction: row
+      gap: 0.5rem
+  byPageType:
+    "404":
+      positions:
+        beforeBody: []
+        left: []
+        right: []
+    content: {}
+    folder:
+      positions:
+        right: []
+    tag:
+      positions:
+        right: []

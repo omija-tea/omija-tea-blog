@@ -1,0 +1,39 @@
+{
+  "name": "@omija-tea/comments-lazy",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    },
+    "./components": {
+      "import": "./components/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "preact": "*"
+  },
+  "quartz": {
+    "name": "comments-lazy",
+    "displayName": "Comments (giscus, lazy)",
+    "description": "giscus 댓글. v4 커스텀: 사용자 인터랙션(스크롤/클릭/키/터치) 시점까지 iframe 로딩 지연.",
+    "category": "component",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 50,
+    "defaultEnabled": true,
+    "defaultOptions": { "provider": "giscus", "options": {} },
+    "components": {
+      "Comments": {
+        "name": "comments-lazy",
+        "displayName": "Comments",
+        "description": "giscus 댓글 (lazy)",
+        "version": "1.0.0",
+        "defaultPosition": "afterBody",
+        "defaultPriority": 10
+      }
+    }
+  }
+}

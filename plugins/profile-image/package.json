@@ -1,0 +1,39 @@
+{
+  "name": "@omija-tea/profile-image",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    },
+    "./components": {
+      "import": "./components/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "preact": "*"
+  },
+  "quartz": {
+    "name": "profile-image",
+    "displayName": "Profile Image",
+    "description": "프로필 사진 (좌측 사이드바 상단, 80px 원형)",
+    "category": "component",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 50,
+    "defaultEnabled": true,
+    "defaultOptions": {},
+    "components": {
+      "ProfileImage": {
+        "name": "profile-image",
+        "displayName": "Profile Image",
+        "description": "프로필 사진",
+        "version": "1.0.0",
+        "defaultPosition": "left",
+        "defaultPriority": 5
+      }
+    }
+  }
+}
