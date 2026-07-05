@@ -23,6 +23,10 @@ Obsidian으로 글을 쓰고 `content/`에 동기화 → 빌드/배포.
 - `plugins/fonts-cdn/` — Pretendard + IBM Plex Mono 웹폰트를 head `<link>`로 주입(transformer의 `externalResources`). v4 `custom.scss @import` 대체(번들 CSS의 `@import 최상단` 제약 회피).
 - `plugins/profile-image/` — 좌측 사이드바 프로필 사진(80px 원형, 데스크톱 전용). 이미지: `quartz/static/profile.png`.
 - `plugins/comments-lazy/` — giscus 댓글. **사용자 인터랙션(스크롤/클릭/키/터치) 전까지 iframe 로딩 지연**(v4 커스텀). 스톡 `comments` 컨테이너를 복제하고 `afterDOMLoaded`만 교체. 스톡 `github:quartz-community/comments`는 disabled.
+- `plugins/contact-info/` — 연락처(이메일/인스타그램/전화) 아이콘 링크. 좌측 사이드바 "정남준 블로그" 바로 아래(priority 15, display: all → 데스크톱·모바일 메뉴 모두). 연락처는 `components/index.js`의 `CONTACTS` 배열에서 수정.
+- `plugins/og-image-noto/` — **vendored fork of `quartz-community/og-image`**. Satori 폰트를 테마(Pretendard, 구글폰트 아님) 대신 **Noto Sans KR**(구글폰트, 한글)로 고정 → 소셜 이미지 생성(스톡은 폰트 못 받아 크래시). `dist/index.js`+`src/emitter.tsx`에서 `theme.typography.header|body` → `"Noto Sans KR"` 패치. **스톡 og-image는 config에서 완전히 제거**(enabled:false여도 clone되어 `CustomOgImagesEmitterName` export 충돌 → Head.tsx 빌드 실패). dist는 prebuilt(1MB, 커밋됨), 런타임 dep `sharp`는 루트 `node_modules`에서 해석.
+
+> 로컬 컴포넌트 플러그인(profile-image/contact-info 등)은 install 시 `✗ build failed` 경고가 뜨지만 **무해**(loader가 dist 없는 로컬 플러그인을 빌드하려다 실패 → symlink 소스 그대로 사용). install/build는 exit 0.
 
 각 로컬 플러그인 = `package.json`(`quartz` manifest: category/components/…) + `index.js`(manifest 재노출) + (컴포넌트면) `components/index.js`. 컴포넌트는 `QuartzComponentConstructor` = `(opts) => (props) => vnode`, `.css` / `.afterDOMLoaded` 지원.
 
@@ -40,7 +44,8 @@ Obsidian으로 글을 쓰고 `content/`에 동기화 → 빌드/배포.
 ```bash
 npx quartz plugin install --from-config   # 플러그인 설치/심링크/인덱스 생성 (빌드 전 필수)
 npx quartz build                          # public/ 로 정적 빌드
-npx quartz build --serve                  # 로컬 프리뷰
+npm run build:site                        # build + Explorer 날짜 주입(patch-explorer-dates) — 배포와 동일 산출물
+npx quartz build --serve                  # 로컬 프리뷰 (날짜 주입 없음 → explorer는 이름순 폴백)
 ```
 
 ## 배포
@@ -53,10 +58,13 @@ npx quartz build --serve                  # 로컬 프리뷰
 - index 우측 RecentNotes(limit 10) / 모바일 TOC → 동일 플러그인 2번째 인스턴스(`source: {repo, name}` + `condition: index`).
 - Explorer hover 효과 + indent 가이드색 → `custom.scss`. (v5 explorer는 모바일 토글·데스크톱 접기 버튼 내장.)
 - recent-notes 헤더 → ko-KR i18n "최근 게시글"(옵션 없음, v4 "최근 작성한 글"과 사실상 동일).
+- **Explorer 날짜 내림차순 정렬** (fork 없이 해결):
+  - contentIndex.json은 `date`를 클라이언트에 안 넣음(content-index가 `delete content.date`). emitter는 `emit.ts`에서 `Promise.all` **병렬** 실행이라 빌드 중 in-place 패치는 content-index 쓰기와 경쟁 → 불가.
+  - 해결: **빌드 후** `scripts/patch-explorer-dates.mjs`가 `sitemap.xml`의 `<lastmod>`(전 페이지 보유)를 읽어 `contentIndex.json`에 `date` 주입. explorer는 `options.sortFn`(문자열; 클라가 `new Function`으로 평가)으로 날짜 내림차순 정렬(폴더는 먼저+이름순, date 없으면 이름순 폴백).
+  - 배포: `deploy.yml`에 "Patch explorer dates" 스텝. 로컬: `npm run build:site`.
+- **Graph**: 포스트 간 wikilink가 거의 없음(5/154) → 태그로만 연결. `localGraph.depth: 2`로 올려 "글→태그→같은 태그의 다른 글"까지 표시(기본 1은 자기 태그까지만). config `graph.options.localGraph.depth`.
 
 ## 아직 남은 항목 (TODO)
 
-- **Explorer 날짜 내림차순 정렬**: contentIndex.json이 클라이언트에 `date`를 노출하지 않음 → `content-index` fork로 date 필드 추가 필요. (현재 v5 기본: 폴더우선+알파벳)
-- **og-image(소셜 이미지)**: Satori가 테마 폰트(Pretendard=비구글)를 googleapis에서 못 받아 실패 → Pretendard TTF 번들 + og-image fork 필요. 현재 `enabled: false`.
-- **태그 페이지에서 index 글 제외**: index.md에 topic 태그 다수 → 태그페이지에 노출. vault의 `index.md`에서 태그 제거하거나 `tag-page` fork.
+- **태그 페이지에서 index 글 제외**: index.md에 topic 태그 다수 → 태그페이지에 노출. vault의 `index.md`에서 태그 제거하거나 `tag-page` fork. (홈 화면엔 태그가 안 보이므로 vault에서 지워도 시각 변화 없음.)
 - Explorer 틱 표시(미세 장식) — DOM 의존, 생략.

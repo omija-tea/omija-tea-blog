@@ -61,6 +61,12 @@
       "commit": "local",
       "installedAt": "2026-07-05T06:01:07.830Z"
     },
+    "contact-info": {
+      "source": "./plugins/contact-info",
+      "resolved": "/home/playjnj/quartz/plugins/contact-info",
+      "commit": "local",
+      "installedAt": "2026-07-05T09:17:13.407Z"
+    },
     "content-index": {
       "source": "github:quartz-community/content-index",
       "resolved": "https://github.com/quartz-community/content-index.git",
@@ -187,11 +193,11 @@
       "commit": "07eaca7b31a537c7c4a0fd2848b1f00014c940af",
       "installedAt": "2026-07-04T13:31:53.195Z"
     },
-    "og-image": {
-      "source": "github:quartz-community/og-image",
-      "resolved": "https://github.com/quartz-community/og-image.git",
-      "commit": "31343c612d02c5fd22ff27a1e6035b2486be75f5",
-      "installedAt": "2026-07-04T13:31:56.191Z"
+    "og-image-noto": {
+      "source": "./plugins/og-image-noto",
+      "resolved": "/home/playjnj/quartz/plugins/og-image-noto",
+      "commit": "local",
+      "installedAt": "2026-07-05T09:07:34.963Z"
     },
     "ox-hugo": {
       "source": "github:quartz-community/ox-hugo",
@@ -209,7 +215,7 @@
       "source": "./plugins/profile-image",
       "resolved": "/home/playjnj/quartz/plugins/profile-image",
       "commit": "local",
-      "installedAt": "2026-07-05T06:01:07.829Z"
+      "installedAt": "2026-07-05T09:17:13.406Z"
     },
     "reader-mode": {
       "source": "github:quartz-community/reader-mode",

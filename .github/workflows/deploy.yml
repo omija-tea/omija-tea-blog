@@ -44,6 +44,11 @@ jobs:
       - name: Build Quartz
         run: npx quartz build
 
+      # content-index가 클라이언트 JSON에서 제거하는 date를 복원 → Explorer 날짜 내림차순 정렬.
+      # (emitter가 병렬 실행이라 빌드 중엔 안전하게 못 넣음 → 빌드 후 sitemap.xml 기반 주입)
+      - name: Patch explorer dates
+        run: node scripts/patch-explorer-dates.mjs public
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

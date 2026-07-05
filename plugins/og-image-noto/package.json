@@ -1,0 +1,41 @@
+{
+  "name": "@omija-tea/og-image-noto",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "quartz": {
+    "name": "og-image-noto",
+    "displayName": "OG Image (Noto Sans KR)",
+    "description": "quartz-community/og-image 로컬 vendored fork. Satori 폰트를 테마(Pretendard, 구글폰트 아님) 대신 Noto Sans KR(구글폰트, 한글 지원)로 고정 — 소셜 이미지 빌드 크래시 회피. dist/src의 theme.typography.header|body → 'Noto Sans KR' 패치.",
+    "category": "emitter",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "requiresInstall": false,
+    "dependencies": [],
+    "defaultOrder": 50,
+    "defaultEnabled": true,
+    "defaultOptions": {
+      "colorScheme": "lightMode",
+      "width": 1200,
+      "height": 630,
+      "excludeRoot": false,
+      "defaultTitle": "Untitled",
+      "defaultDescription": "No description provided"
+    },
+    "optionSchema": {
+      "colorScheme": { "type": "enum", "values": ["lightMode", "darkMode"] },
+      "width": { "type": "number" },
+      "height": { "type": "number" },
+      "excludeRoot": { "type": "boolean" },
+      "defaultTitle": { "type": "string" },
+      "defaultDescription": { "type": "string" }
+    }
+  }
+}

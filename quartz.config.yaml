@@ -133,9 +133,13 @@ plugins:
       rssFullHtml: true
   - source: github:quartz-community/favicon
     enabled: true
-  # og-image: 테마 폰트가 Pretendard(구글폰트 아님)라 폰트 fetch 실패 → Task 4에서 폰트 설정 후 재활성화
-  - source: github:quartz-community/og-image
-    enabled: false
+  # og-image(스톡)은 config에서 완전히 제외한다. --from-config는 enabled:false여도 clone하는데,
+  # 스톡·fork 둘 다 CustomOgImagesEmitterName을 export → 생성 인덱스에서 충돌로 누락 → Head.tsx 빌드 실패.
+  # 대신 로컬 vendored fork(./plugins/og-image-noto)가 유일한 og-image 제공자가 되어 Noto Sans KR로 소셜 이미지 생성.
+  - source: ./plugins/og-image-noto
+    enabled: true
+    options:
+      colorScheme: lightMode
   - source: github:quartz-community/cname
     enabled: true
   - source: github:quartz-community/content-page
@@ -158,6 +162,13 @@ plugins:
     layout:
       position: left
       priority: 10
+  # 커스텀 로컬 플러그인: 연락처(이메일/인스타/전화) — "정남준 블로그" 바로 아래
+  - source: ./plugins/contact-info
+    enabled: true
+    layout:
+      position: left
+      priority: 15
+      display: all
   - source: github:quartz-community/search
     enabled: true
     layout:
@@ -185,11 +196,33 @@ plugins:
     enabled: true
     options:
       title: 탐색
+      # 날짜 내림차순 정렬. sortFn은 문자열로 넘기면 클라이언트가 new Function으로 평가한다.
+      # date는 scripts/patch-explorer-dates.mjs(빌드 후)가 contentIndex.json에 주입.
+      # date가 없으면(로컬 serve 등) 이름순으로 폴백. 폴더는 항상 먼저+이름순.
+      sortFn: |-
+        (a, b) => {
+          if (a.isFolder && b.isFolder) {
+            return (a.displayName || "").localeCompare(b.displayName || "", undefined, { numeric: true, sensitivity: "base" });
+          }
+          if (!a.isFolder && !b.isFolder) {
+            var da = a.data && a.data.date ? Date.parse(a.data.date) : 0;
+            var db = b.data && b.data.date ? Date.parse(b.data.date) : 0;
+            if (da !== db) return db - da;
+            return (a.displayName || "").localeCompare(b.displayName || "", undefined, { numeric: true, sensitivity: "base" });
+          }
+          return a.isFolder ? -1 : 1;
+        }
     layout:
       position: left
       priority: 50
   - source: github:quartz-community/graph
     enabled: true
+    options:
+      # 포스트 간 wikilink가 거의 없어(5/154) 태그로만 연결됨.
+      # depth 1이면 "글→자기 태그"까지만 보여 외톨이 별처럼 보이므로,
+      # depth 2로 올려 "글→태그→같은 태그의 다른 글"까지 표시.
+      localGraph:
+        depth: 2
     layout:
       position: right
       priority: 10

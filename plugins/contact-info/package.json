@@ -1,0 +1,39 @@
+{
+  "name": "@omija-tea/contact-info",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    },
+    "./components": {
+      "import": "./components/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "preact": "*"
+  },
+  "quartz": {
+    "name": "contact-info",
+    "displayName": "Contact Info",
+    "description": "연락처(이메일/인스타그램/전화) 아이콘 링크. 데스크톱은 프로필·제목 아래, 모바일은 메뉴에 표시.",
+    "category": "component",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 50,
+    "defaultEnabled": true,
+    "defaultOptions": {},
+    "components": {
+      "ContactInfo": {
+        "name": "contact-info",
+        "displayName": "Contact Info",
+        "description": "연락처 아이콘 링크",
+        "version": "1.0.0",
+        "defaultPosition": "left",
+        "defaultPriority": 15
+      }
+    }
+  }
+}
