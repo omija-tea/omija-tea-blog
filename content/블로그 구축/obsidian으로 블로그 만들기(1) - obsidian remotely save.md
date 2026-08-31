@@ -46,9 +46,20 @@ Remotely Save라는 옵시디언 커뮤니티 플러그인이 또 있다. 얘는
 ### 시도
 1. 라즈베리파이에 webDAV docker compose 파일 만들고 실행
 ```yaml
-asdf:
-	asdf:
-		asdf = wef
+services:
+  webdav:
+    image: dgraziotin/nginx-webdav-nononsense
+    container_name: obsidian-webdav
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:5984:80"
+    volumes:
+      - ./data:/data
+    environment:
+      - WEBDAV_USERNAME=id
+      - WEBDAV_PASSWORD=pw
+      - PUID=1000
+      - PGID=1000
 ```
 2. cloudflare tunnel 설정. webDAV의 포트와 연결되는 터널을 만들어 주면 된다.
 3. 아무 기기에서든 obsidian을 깔고 remotely save 플러그인을 설치한 후 설정만 잡아주면..? 끝!!매우 간단
